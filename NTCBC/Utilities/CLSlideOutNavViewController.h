@@ -29,3 +29,10 @@
 - (void)toggleSlideOutMenu;
 
 @end
+
+@interface KBSlideOutMenuCell : UITableViewCell
+
+@property (nonatomic, assign) BOOL adjustImageOnSelection;
+@property (nonatomic, retain) UIColor *imageColor;
+
+@end

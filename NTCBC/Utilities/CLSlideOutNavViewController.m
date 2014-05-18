@@ -236,3 +236,71 @@
 }
 
 @end
+
+
+@implementation KBSlideOutMenuCell
+
+@synthesize imageColor = _imageColor;
+
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    
+    if (self) {
+        self.backgroundColor = [UIColor clearColor];
+        self.textLabel.font = [UIFont fontWithName:@"Avenir-Book" size:16];
+        self.textLabel.textColor = [UIColor whiteColor];
+        self.textLabel.highlightedTextColor = [UIColor colorWithRed: 25.0/255.0 green: 175.0/255.0 blue: 199.0/255.0 alpha: 1.0];
+        self.imageView.tintColor = self.imageColor;
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+        self.adjustImageOnSelection = YES;
+    }
+    
+    return self;
+}
+
+- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
+    [super setHighlighted:highlighted animated:animated];
+    self.textLabel.highlighted = self.isSelected || highlighted;
+    if (_adjustImageOnSelection)
+        self.imageView.tintColor = highlighted || self.isSelected ? self.textLabel.highlightedTextColor : self.imageColor;
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+    self.textLabel.highlighted = self.isHighlighted || selected;
+    if (_adjustImageOnSelection)
+        self.imageView.tintColor = self.isHighlighted || selected ? self.textLabel.highlightedTextColor : self.imageColor;
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    CGRect f = self.imageView.frame;
+    f.origin.x = CL_SLIDE_OUT_NAV_PADDING + (IsPad() ? 25 : 20);
+    self.imageView.frame = f;
+    
+    CGFloat spacing = IsPad() ? 17 : 12;
+    
+    f = self.textLabel.frame;
+    f.origin.x = CGRectGetMaxX(self.imageView.frame) + spacing;
+    f.size.width = self.contentView.bounds.size.width - f.origin.x - spacing;
+    self.textLabel.frame = f;
+}
+
+- (UIColor *)imageColor {
+    if (_imageColor == nil)
+        return self.textLabel.textColor;
+    else
+        return _imageColor;
+}
+
+- (void)setImageColor:(UIColor *)imageColor {
+    if (imageColor == _imageColor)
+        return;
+    
+    _imageColor = imageColor;
+    
+    if ((_adjustImageOnSelection == NO) || ((self.selected || self.highlighted) == NO))
+        self.imageView.tintColor = self.imageColor;
+}
+
+@end

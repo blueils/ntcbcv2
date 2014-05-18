@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FCB6C02419294A0D009330C7 /* BCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02319294A0D009330C7 /* BCRootViewController.m */; };
+		FCB6C02519294A0D009330C7 /* BCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02319294A0D009330C7 /* BCRootViewController.m */; };
+		FCB6C02819294B17009330C7 /* BCAnnouncementsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02719294B17009330C7 /* BCAnnouncementsTableViewController.m */; };
+		FCB6C02919294B17009330C7 /* BCAnnouncementsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02719294B17009330C7 /* BCAnnouncementsTableViewController.m */; };
+		FCB6C02C19294B25009330C7 /* BCBuildFaithTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02B19294B25009330C7 /* BCBuildFaithTableViewController.m */; };
+		FCB6C02D19294B25009330C7 /* BCBuildFaithTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02B19294B25009330C7 /* BCBuildFaithTableViewController.m */; };
+		FCB6C03019294B3B009330C7 /* BCChurchBasicInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02F19294B3B009330C7 /* BCChurchBasicInfoTableViewController.m */; };
+		FCB6C03119294B3B009330C7 /* BCChurchBasicInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02F19294B3B009330C7 /* BCChurchBasicInfoTableViewController.m */; };
+		FCB6C03419294B46009330C7 /* BCPrayerRequestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C03319294B46009330C7 /* BCPrayerRequestsViewController.m */; };
+		FCB6C03519294B46009330C7 /* BCPrayerRequestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C03319294B46009330C7 /* BCPrayerRequestsViewController.m */; };
+		FCB6C03819294B51009330C7 /* BCWorshipScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C03719294B51009330C7 /* BCWorshipScheduleTableViewController.m */; };
+		FCB6C03919294B51009330C7 /* BCWorshipScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C03719294B51009330C7 /* BCWorshipScheduleTableViewController.m */; };
+		FCB6C03D19295BF2009330C7 /* NSString+IntegralSizing.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C03C19295BF2009330C7 /* NSString+IntegralSizing.m */; };
+		FCB6C03E19295BF2009330C7 /* NSString+IntegralSizing.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C03C19295BF2009330C7 /* NSString+IntegralSizing.m */; };
 		FCCC29021925A6AD00FF7B3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC29011925A6AD00FF7B3C /* Foundation.framework */; };
 		FCCC29041925A6AD00FF7B3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC29031925A6AD00FF7B3C /* CoreGraphics.framework */; };
 		FCCC29061925A6AD00FF7B3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC29051925A6AD00FF7B3C /* UIKit.framework */; };
@@ -37,6 +51,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FCB6C02219294A0C009330C7 /* BCRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCRootViewController.h; sourceTree = "<group>"; };
+		FCB6C02319294A0D009330C7 /* BCRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCRootViewController.m; sourceTree = "<group>"; };
+		FCB6C02619294B17009330C7 /* BCAnnouncementsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCAnnouncementsTableViewController.h; sourceTree = "<group>"; };
+		FCB6C02719294B17009330C7 /* BCAnnouncementsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCAnnouncementsTableViewController.m; sourceTree = "<group>"; };
+		FCB6C02A19294B25009330C7 /* BCBuildFaithTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCBuildFaithTableViewController.h; sourceTree = "<group>"; };
+		FCB6C02B19294B25009330C7 /* BCBuildFaithTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCBuildFaithTableViewController.m; sourceTree = "<group>"; };
+		FCB6C02E19294B3B009330C7 /* BCChurchBasicInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCChurchBasicInfoTableViewController.h; sourceTree = "<group>"; };
+		FCB6C02F19294B3B009330C7 /* BCChurchBasicInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCChurchBasicInfoTableViewController.m; sourceTree = "<group>"; };
+		FCB6C03219294B46009330C7 /* BCPrayerRequestsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCPrayerRequestsViewController.h; sourceTree = "<group>"; };
+		FCB6C03319294B46009330C7 /* BCPrayerRequestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCPrayerRequestsViewController.m; sourceTree = "<group>"; };
+		FCB6C03619294B51009330C7 /* BCWorshipScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCWorshipScheduleTableViewController.h; sourceTree = "<group>"; };
+		FCB6C03719294B51009330C7 /* BCWorshipScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCWorshipScheduleTableViewController.m; sourceTree = "<group>"; };
+		FCB6C03B19295BF2009330C7 /* NSString+IntegralSizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IntegralSizing.h"; sourceTree = "<group>"; };
+		FCB6C03C19295BF2009330C7 /* NSString+IntegralSizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IntegralSizing.m"; sourceTree = "<group>"; };
 		FCCC28FE1925A6AD00FF7B3C /* NTCBC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTCBC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCCC29011925A6AD00FF7B3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FCCC29031925A6AD00FF7B3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,6 +114,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FCB6C03A19295BF2009330C7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FCB6C03B19295BF2009330C7 /* NSString+IntegralSizing.h */,
+				FCB6C03C19295BF2009330C7 /* NSString+IntegralSizing.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		FCCC28F51925A6AD00FF7B3C = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +162,18 @@
 				FCCC29131925A6AD00FF7B3C /* BCAppDelegate.m */,
 				FCCC29181925A6AD00FF7B3C /* Images.xcassets */,
 				FCCC29151925A6AD00FF7B3C /* NTCBC.xcdatamodeld */,
+				FCB6C02219294A0C009330C7 /* BCRootViewController.h */,
+				FCB6C02319294A0D009330C7 /* BCRootViewController.m */,
+				FCB6C02619294B17009330C7 /* BCAnnouncementsTableViewController.h */,
+				FCB6C02719294B17009330C7 /* BCAnnouncementsTableViewController.m */,
+				FCB6C02A19294B25009330C7 /* BCBuildFaithTableViewController.h */,
+				FCB6C02B19294B25009330C7 /* BCBuildFaithTableViewController.m */,
+				FCB6C02E19294B3B009330C7 /* BCChurchBasicInfoTableViewController.h */,
+				FCB6C02F19294B3B009330C7 /* BCChurchBasicInfoTableViewController.m */,
+				FCB6C03219294B46009330C7 /* BCPrayerRequestsViewController.h */,
+				FCB6C03319294B46009330C7 /* BCPrayerRequestsViewController.m */,
+				FCB6C03619294B51009330C7 /* BCWorshipScheduleTableViewController.h */,
+				FCB6C03719294B51009330C7 /* BCWorshipScheduleTableViewController.m */,
 				FCCC290A1925A6AD00FF7B3C /* Supporting Files */,
 			);
 			path = NTCBC;
@@ -162,6 +211,7 @@
 		FCCC29361925A83F00FF7B3C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				FCB6C03A19295BF2009330C7 /* Categories */,
 				FCCC29371925A89900FF7B3C /* CLSlideOutNavViewController.h */,
 				FCCC29381925A89900FF7B3C /* CLSlideOutNavViewController.m */,
 				FCCC293F1925AAD100FF7B3C /* CLCommon.h */,
@@ -265,9 +315,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB6C03019294B3B009330C7 /* BCChurchBasicInfoTableViewController.m in Sources */,
 				FCCC29391925A89900FF7B3C /* CLSlideOutNavViewController.m in Sources */,
+				FCB6C02419294A0D009330C7 /* BCRootViewController.m in Sources */,
 				FCCC29171925A6AD00FF7B3C /* NTCBC.xcdatamodeld in Sources */,
+				FCB6C03819294B51009330C7 /* BCWorshipScheduleTableViewController.m in Sources */,
+				FCB6C03D19295BF2009330C7 /* NSString+IntegralSizing.m in Sources */,
+				FCB6C02C19294B25009330C7 /* BCBuildFaithTableViewController.m in Sources */,
+				FCB6C02819294B17009330C7 /* BCAnnouncementsTableViewController.m in Sources */,
 				FCCC29101925A6AD00FF7B3C /* main.m in Sources */,
+				FCB6C03419294B46009330C7 /* BCPrayerRequestsViewController.m in Sources */,
 				FCCC29141925A6AD00FF7B3C /* BCAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,8 +333,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB6C03119294B3B009330C7 /* BCChurchBasicInfoTableViewController.m in Sources */,
 				FCCC293A1925A89900FF7B3C /* CLSlideOutNavViewController.m in Sources */,
+				FCB6C03519294B46009330C7 /* BCPrayerRequestsViewController.m in Sources */,
+				FCB6C02919294B17009330C7 /* BCAnnouncementsTableViewController.m in Sources */,
+				FCB6C02D19294B25009330C7 /* BCBuildFaithTableViewController.m in Sources */,
 				FCCC292D1925A6AD00FF7B3C /* NTCBCTests.m in Sources */,
+				FCB6C03919294B51009330C7 /* BCWorshipScheduleTableViewController.m in Sources */,
+				FCB6C03E19295BF2009330C7 /* NSString+IntegralSizing.m in Sources */,
+				FCB6C02519294A0D009330C7 /* BCRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +532,7 @@
 				FCCC29321925A6AD00FF7B3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCCC29331925A6AD00FF7B3C /* Build configuration list for PBXNativeTarget "NTCBCTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +541,7 @@
 				FCCC29351925A6AD00FF7B3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

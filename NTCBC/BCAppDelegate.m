@@ -8,6 +8,7 @@
 
 #import "BCAppDelegate.h"
 #import <sys/utsname.h>
+#import "BCRootViewController.h"
 
 @implementation BCAppDelegate
 
@@ -90,6 +91,11 @@ BOOL IsBlurringAvailable()
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    BCRootViewController *rootViewController = [[BCRootViewController alloc] init];
+    //Setup App UI
+    [self updateGlobalNavBarAppearance];
+    
+    self.window.rootViewController = rootViewController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
@@ -127,7 +133,7 @@ BOOL IsBlurringAvailable()
 - (void) setupApplication: (UIApplication *) application withOptions: (NSDictionary*) launchOptions {
     //(Mostly) implemented in iPad/iPhone subclasses
     
-    //Setup App UI
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -170,6 +176,15 @@ BOOL IsBlurringAvailable()
             abort();
         } 
     }
+}
+
+- (void)updateGlobalNavBarAppearance {
+    [[UINavigationBar appearance] setBarStyle: UIBarStyleBlack];
+    UIColor *tintColor = [UIColor whiteColor];
+    
+    [[UINavigationBar appearance] setTintColor:tintColor];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : tintColor, NSFontAttributeName : [UIFont fontWithName:@"Avenir-Book" size:IsPad() ? 24 : 20]}];
+    
 }
 
 #pragma mark - Core Data stack
