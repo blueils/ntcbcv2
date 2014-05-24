@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC287544193022510017BBF6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC287543193022510017BBF6 /* MobileCoreServices.framework */; };
+		FC2875461930240E0017BBF6 /* libGTLTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2875451930240E0017BBF6 /* libGTLTouchStaticLib.a */; };
 		FCB6C02419294A0D009330C7 /* BCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02319294A0D009330C7 /* BCRootViewController.m */; };
 		FCB6C02519294A0D009330C7 /* BCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02319294A0D009330C7 /* BCRootViewController.m */; };
 		FCB6C02819294B17009330C7 /* BCAnnouncementsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02719294B17009330C7 /* BCAnnouncementsTableViewController.m */; };
@@ -21,6 +23,12 @@
 		FCB6C03919294B51009330C7 /* BCWorshipScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C03719294B51009330C7 /* BCWorshipScheduleTableViewController.m */; };
 		FCB6C03D19295BF2009330C7 /* NSString+IntegralSizing.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C03C19295BF2009330C7 /* NSString+IntegralSizing.m */; };
 		FCB6C03E19295BF2009330C7 /* NSString+IntegralSizing.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C03C19295BF2009330C7 /* NSString+IntegralSizing.m */; };
+		FCB6C05519296AAC009330C7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB6C05419296AAC009330C7 /* Security.framework */; };
+		FCB6C05719296ABA009330C7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB6C05619296ABA009330C7 /* SystemConfiguration.framework */; };
+		FCB6C05919296BD0009330C7 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCB6C05819296BCF009330C7 /* GTMOAuth2ViewTouch.xib */; };
+		FCB6C05A19296BD0009330C7 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCB6C05819296BCF009330C7 /* GTMOAuth2ViewTouch.xib */; };
+		FCB6C05D19296C2F009330C7 /* GTLDrive_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C05C19296C2F009330C7 /* GTLDrive_Sources.m */; };
+		FCB6C05E19296C2F009330C7 /* GTLDrive_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C05C19296C2F009330C7 /* GTLDrive_Sources.m */; };
 		FCCC29021925A6AD00FF7B3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC29011925A6AD00FF7B3C /* Foundation.framework */; };
 		FCCC29041925A6AD00FF7B3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC29031925A6AD00FF7B3C /* CoreGraphics.framework */; };
 		FCCC29061925A6AD00FF7B3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC29051925A6AD00FF7B3C /* UIKit.framework */; };
@@ -51,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC287543193022510017BBF6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FC2875451930240E0017BBF6 /* libGTLTouchStaticLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGTLTouchStaticLib.a; path = "NTCBC/ThirdPartyLibs/GoogleDriveAPI/build/Debug-iphoneos/libGTLTouchStaticLib.a"; sourceTree = "<group>"; };
 		FCB6C02219294A0C009330C7 /* BCRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCRootViewController.h; sourceTree = "<group>"; };
 		FCB6C02319294A0D009330C7 /* BCRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCRootViewController.m; sourceTree = "<group>"; };
 		FCB6C02619294B17009330C7 /* BCAnnouncementsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCAnnouncementsTableViewController.h; sourceTree = "<group>"; };
@@ -65,6 +75,11 @@
 		FCB6C03719294B51009330C7 /* BCWorshipScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCWorshipScheduleTableViewController.m; sourceTree = "<group>"; };
 		FCB6C03B19295BF2009330C7 /* NSString+IntegralSizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IntegralSizing.h"; sourceTree = "<group>"; };
 		FCB6C03C19295BF2009330C7 /* NSString+IntegralSizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IntegralSizing.m"; sourceTree = "<group>"; };
+		FCB6C05419296AAC009330C7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FCB6C05619296ABA009330C7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FCB6C05819296BCF009330C7 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = ThirdPartyLibs/GoogleDriveAPI/OAuth2/Touch/GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
+		FCB6C05B19296C2F009330C7 /* GTLDrive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLDrive.h; path = ThirdPartyLibs/GoogleDriveAPI/Services/Drive/Generated/GTLDrive.h; sourceTree = "<group>"; };
+		FCB6C05C19296C2F009330C7 /* GTLDrive_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLDrive_Sources.m; path = ThirdPartyLibs/GoogleDriveAPI/Services/Drive/Generated/GTLDrive_Sources.m; sourceTree = "<group>"; };
 		FCCC28FE1925A6AD00FF7B3C /* NTCBC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTCBC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCCC29011925A6AD00FF7B3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FCCC29031925A6AD00FF7B3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -93,6 +108,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC2875461930240E0017BBF6 /* libGTLTouchStaticLib.a in Frameworks */,
+				FC287544193022510017BBF6 /* MobileCoreServices.framework in Frameworks */,
+				FCB6C05719296ABA009330C7 /* SystemConfiguration.framework in Frameworks */,
+				FCB6C05519296AAC009330C7 /* Security.framework in Frameworks */,
 				FCCC29041925A6AD00FF7B3C /* CoreGraphics.framework in Frameworks */,
 				FCCC29081925A6AD00FF7B3C /* CoreData.framework in Frameworks */,
 				FCCC29061925A6AD00FF7B3C /* UIKit.framework in Frameworks */,
@@ -145,6 +164,10 @@
 		FCCC29001925A6AD00FF7B3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC2875451930240E0017BBF6 /* libGTLTouchStaticLib.a */,
+				FC287543193022510017BBF6 /* MobileCoreServices.framework */,
+				FCB6C05619296ABA009330C7 /* SystemConfiguration.framework */,
+				FCB6C05419296AAC009330C7 /* Security.framework */,
 				FCCC29011925A6AD00FF7B3C /* Foundation.framework */,
 				FCCC29031925A6AD00FF7B3C /* CoreGraphics.framework */,
 				FCCC29051925A6AD00FF7B3C /* UIKit.framework */,
@@ -174,6 +197,8 @@
 				FCB6C03319294B46009330C7 /* BCPrayerRequestsViewController.m */,
 				FCB6C03619294B51009330C7 /* BCWorshipScheduleTableViewController.h */,
 				FCB6C03719294B51009330C7 /* BCWorshipScheduleTableViewController.m */,
+				FCB6C05B19296C2F009330C7 /* GTLDrive.h */,
+				FCB6C05C19296C2F009330C7 /* GTLDrive_Sources.m */,
 				FCCC290A1925A6AD00FF7B3C /* Supporting Files */,
 			);
 			path = NTCBC;
@@ -182,6 +207,7 @@
 		FCCC290A1925A6AD00FF7B3C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FCB6C05819296BCF009330C7 /* GTMOAuth2ViewTouch.xib */,
 				FCCC290B1925A6AD00FF7B3C /* NTCBC-Info.plist */,
 				FCCC290C1925A6AD00FF7B3C /* InfoPlist.strings */,
 				FCCC290F1925A6AD00FF7B3C /* main.m */,
@@ -295,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB6C05919296BD0009330C7 /* GTMOAuth2ViewTouch.xib in Resources */,
 				FCCC290E1925A6AD00FF7B3C /* InfoPlist.strings in Resources */,
 				FCCC29191925A6AD00FF7B3C /* Images.xcassets in Resources */,
 			);
@@ -304,6 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB6C05A19296BD0009330C7 /* GTMOAuth2ViewTouch.xib in Resources */,
 				FCCC292B1925A6AD00FF7B3C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +352,7 @@
 				FCB6C02C19294B25009330C7 /* BCBuildFaithTableViewController.m in Sources */,
 				FCB6C02819294B17009330C7 /* BCAnnouncementsTableViewController.m in Sources */,
 				FCCC29101925A6AD00FF7B3C /* main.m in Sources */,
+				FCB6C05D19296C2F009330C7 /* GTLDrive_Sources.m in Sources */,
 				FCB6C03419294B46009330C7 /* BCPrayerRequestsViewController.m in Sources */,
 				FCCC29141925A6AD00FF7B3C /* BCAppDelegate.m in Sources */,
 			);
@@ -338,6 +367,7 @@
 				FCB6C03519294B46009330C7 /* BCPrayerRequestsViewController.m in Sources */,
 				FCB6C02919294B17009330C7 /* BCAnnouncementsTableViewController.m in Sources */,
 				FCB6C02D19294B25009330C7 /* BCBuildFaithTableViewController.m in Sources */,
+				FCB6C05E19296C2F009330C7 /* GTLDrive_Sources.m in Sources */,
 				FCCC292D1925A6AD00FF7B3C /* NTCBCTests.m in Sources */,
 				FCB6C03919294B51009330C7 /* BCWorshipScheduleTableViewController.m in Sources */,
 				FCB6C03E19295BF2009330C7 /* NSString+IntegralSizing.m in Sources */,
@@ -455,7 +485,16 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NTCBC/NTCBC-Prefix.pch";
 				INFOPLIST_FILE = "NTCBC/NTCBC-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NTCBC/ThirdPartyLibs/GoogleDriveAPI/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/chung-chinglan/Desktop/ntcbcv2/NTCBC/ThirdPartyLibs/GoogleDriveAPI/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -468,7 +507,16 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NTCBC/NTCBC-Prefix.pch";
 				INFOPLIST_FILE = "NTCBC/NTCBC-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NTCBC/ThirdPartyLibs/GoogleDriveAPI/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/chung-chinglan/Desktop/ntcbcv2/NTCBC/ThirdPartyLibs/GoogleDriveAPI/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
