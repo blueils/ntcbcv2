@@ -5,6 +5,7 @@
 //
 
 #import <Availability.h>
+#import <dispatch/dispatch.h>       // for <os/object.h> in iOS 6
 
 #ifndef __IPHONE_3_0
 #warning "This project uses features only available in iOS SDK 3.0 and later."
@@ -14,4 +15,50 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
+
+    #if NS_BLOCKS_AVAILABLE
+    #define blockSafe_cat(A, B)	A##B
+    #define blockSafe_line(V, TMP) __typeof__(V) blockSafe_cat(blockSafe_tmp__, TMP) V; __block __typeof__(V) V = blockSafe_cat(blockSafe_tmp__, TMP)
+    #define blockSafe(V) blockSafe_line(V, safe##__LINE__);
+    #endif	/* NS_BLOCKS_ENABLED */
+
+    #ifndef __IPHONE_5_0
+    #if __has_feature(attribute_ns_returns_not_retained)
+    #define NS_RETURNS_NOT_RETAINED __attribute__((ns_returns_not_retained))
+    #else
+    #define NS_RETURNS_NOT_RETAINED
+    #endif
+    #endif
+
+    #define USING_MRR (!__has_feature(objc_arc))
+
+    #if defined(OS_OBJECT_USE_OBJC) && OS_OBJECT_USE_OBJC
+    #define DISPATCH_USES_ARC !USING_MRR
+    #else
+    #define DISPATCH_USES_ARC 0
+    #endif
+
+    #if USING_MRR
+    // clear this out to avoid compiler/analyzer warnings about how it doesn't do anything
+    #define __bridge
+    #endif
+
+    #if __has_feature(objc_arc) && defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_5_0
+    #define __maybe_weak __weak
+    #define __block_weak __weak
+    #define property_weak weak
+    #elif __has_feature(objc_arc) && defined(MAC_OS_X_VERSION_MIN_REQUIRED) && MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_7
+    #define __maybe_weak __weak
+    #define __block_weak __weak
+    #define property_weak weak
+    #else
+    #define __maybe_weak __unsafe_unretained
+    #define __block_weak __block
+    #define property_weak assign
+    #endif
+
+    #define MAKE_WEAK_SELF()	__weak id __weak_self_ref = self; __typeof__(self) typeMe = self
+    #define USE_WEAK_SELF()		__typeof__(typeMe) me = __weak_self_ref
+
+
 #endif
