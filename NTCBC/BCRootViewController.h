@@ -17,8 +17,6 @@ enum {
     
     BCNavIndexTotal
 };
-
-
 typedef NSInteger BCNavIndex;
 
 @interface BCRootViewController : CLSlideOutNavViewController<UITableViewDataSource, UITableViewDelegate> {

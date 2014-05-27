@@ -25,6 +25,8 @@
 		FCB6C03919294B51009330C7 /* BCWorshipScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C03719294B51009330C7 /* BCWorshipScheduleTableViewController.m */; };
 		FCB6C03D19295BF2009330C7 /* NSString+IntegralSizing.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C03C19295BF2009330C7 /* NSString+IntegralSizing.m */; };
 		FCB6C03E19295BF2009330C7 /* NSString+IntegralSizing.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C03C19295BF2009330C7 /* NSString+IntegralSizing.m */; };
+		FCC51F711934D3A100948247 /* BCUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC51F701934D3A100948247 /* BCUserSettings.m */; };
+		FCC51F721934D3A100948247 /* BCUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC51F701934D3A100948247 /* BCUserSettings.m */; };
 		FCCC29021925A6AD00FF7B3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC29011925A6AD00FF7B3C /* Foundation.framework */; };
 		FCCC29041925A6AD00FF7B3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC29031925A6AD00FF7B3C /* CoreGraphics.framework */; };
 		FCCC29061925A6AD00FF7B3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC29051925A6AD00FF7B3C /* UIKit.framework */; };
@@ -73,6 +75,8 @@
 		FCB6C03719294B51009330C7 /* BCWorshipScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCWorshipScheduleTableViewController.m; sourceTree = "<group>"; };
 		FCB6C03B19295BF2009330C7 /* NSString+IntegralSizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IntegralSizing.h"; sourceTree = "<group>"; };
 		FCB6C03C19295BF2009330C7 /* NSString+IntegralSizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IntegralSizing.m"; sourceTree = "<group>"; };
+		FCC51F6F1934D3A100948247 /* BCUserSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCUserSettings.h; sourceTree = "<group>"; };
+		FCC51F701934D3A100948247 /* BCUserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCUserSettings.m; sourceTree = "<group>"; };
 		FCCC28FE1925A6AD00FF7B3C /* NTCBC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTCBC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCCC29011925A6AD00FF7B3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FCCC29031925A6AD00FF7B3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -165,6 +169,8 @@
 		FCCC29091925A6AD00FF7B3C /* NTCBC */ = {
 			isa = PBXGroup;
 			children = (
+				FCC51F6F1934D3A100948247 /* BCUserSettings.h */,
+				FCC51F701934D3A100948247 /* BCUserSettings.m */,
 				FCCC29361925A83F00FF7B3C /* Utilities */,
 				FCCC29121925A6AD00FF7B3C /* BCAppDelegate.h */,
 				FCCC29131925A6AD00FF7B3C /* BCAppDelegate.m */,
@@ -337,6 +343,7 @@
 				FCB6C03D19295BF2009330C7 /* NSString+IntegralSizing.m in Sources */,
 				FCB6C02C19294B25009330C7 /* BCBuildFaithTableViewController.m in Sources */,
 				FCB6C02819294B17009330C7 /* BCAnnouncementsTableViewController.m in Sources */,
+				FCC51F711934D3A100948247 /* BCUserSettings.m in Sources */,
 				FCCC29101925A6AD00FF7B3C /* main.m in Sources */,
 				FCB6C03419294B46009330C7 /* BCPrayerRequestsViewController.m in Sources */,
 				FCCC29141925A6AD00FF7B3C /* BCAppDelegate.m in Sources */,
@@ -347,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCC51F721934D3A100948247 /* BCUserSettings.m in Sources */,
 				FCB6C03119294B3B009330C7 /* BCChurchBasicInfoTableViewController.m in Sources */,
 				FC1CB8D11930E815008F8B7C /* CLNetworkService.m in Sources */,
 				FCCC293A1925A89900FF7B3C /* CLSlideOutNavViewController.m in Sources */,

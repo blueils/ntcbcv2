@@ -14,6 +14,7 @@
 #import "BCBuildFaithTableViewController.h"
 #import "CLCommon.h"
 #import "NSString+IntegralSizing.h"
+#import "BCUserSettings.h"
 
 
 @interface BCRootViewController ()
@@ -51,6 +52,8 @@
         
         _sideNavTitles = @[@"Church Info", @"Worship Schedules", @"Announcements", @"Weekly Prayer Requests", @"Build Up Your Faith"/*, @"General Information"*/];
         
+        _selectedIndex = [BCUserSettings latestNavIndex];
+        
         [self addChildViewController:self.currentViewController];
     }
     return self;
@@ -70,6 +73,7 @@
     _slideOutView.tableView.delegate = self;
     
     [self.view addSubview:self.currentViewController.view];
+    [_slideOutView.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:_selectedIndex inSection:0] animated:NO scrollPosition:UITableViewScrollPositionNone];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -136,6 +140,7 @@
 	UIViewController *previousViewController = _viewControllers[_selectedIndex];
 	UIViewController *currentViewController = _viewControllers[newIndex];
 	_selectedIndex = newIndex;
+    [BCUserSettings setLatestNavIndex:_selectedIndex];
 	currentViewController.view.frame = self.view.bounds;
 	
 	[previousViewController viewWillDisappear:NO];
