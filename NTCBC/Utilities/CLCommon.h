@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Meeto Technologies Inc. All rights reserved.
 //
 
-#ifndef NTCBC_CLCommon_h
-#define NTCBC_CLCommon_h
+#ifndef CLCommon_h
+#define CLCommon_h
 
 extern BOOL OSVersionAtLeast( int vMajor, int vMinor );
 extern BOOL IsPad();
@@ -15,3 +15,4 @@ extern BOOL HasTallScreen();
 extern BOOL IsBlurringAvailable();
 
 #endif
+
