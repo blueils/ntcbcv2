@@ -27,7 +27,7 @@
 {
     self = [super init];
     if (self) {
-        BCChurchBasicInfoTableViewController *infoController = [[BCChurchBasicInfoTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+        BCChurchBasicInfoTableViewController *infoController = [[BCChurchBasicInfoTableViewController alloc] init];
         infoController.navigationItem.leftBarButtonItems = [self leftBarButtonItems];
         UINavigationController *infoNavController = [[UINavigationController alloc] initWithRootViewController:infoController];
         

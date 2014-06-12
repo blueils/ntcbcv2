@@ -7,26 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC1CB8D01930E815008F8B7C /* CLNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1CB8CF1930E815008F8B7C /* CLNetworkService.m */; };
-		FC1CB8D11930E815008F8B7C /* CLNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1CB8CF1930E815008F8B7C /* CLNetworkService.m */; };
-		FC1CB8D41930EA09008F8B7C /* CLBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1CB8D31930EA09008F8B7C /* CLBlockOperation.m */; };
-		FC1CB8D51930EA0A008F8B7C /* CLBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1CB8D31930EA09008F8B7C /* CLBlockOperation.m */; };
+		FC55615C194A28D800717189 /* BCUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55613F194A28D800717189 /* BCUserSettings.m */; };
+		FC55615D194A28D800717189 /* BCUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55613F194A28D800717189 /* BCUserSettings.m */; };
+		FC55615E194A28D800717189 /* BCAnnouncementsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556142194A28D800717189 /* BCAnnouncementsTableViewController.m */; };
+		FC55615F194A28D800717189 /* BCAnnouncementsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556142194A28D800717189 /* BCAnnouncementsTableViewController.m */; };
+		FC556160194A28D800717189 /* BCBuildFaithTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556144194A28D800717189 /* BCBuildFaithTableViewController.m */; };
+		FC556161194A28D800717189 /* BCBuildFaithTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556144194A28D800717189 /* BCBuildFaithTableViewController.m */; };
+		FC556162194A28D800717189 /* BCChurchBasicInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556146194A28D800717189 /* BCChurchBasicInfoTableViewController.m */; };
+		FC556163194A28D800717189 /* BCChurchBasicInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556146194A28D800717189 /* BCChurchBasicInfoTableViewController.m */; };
+		FC556164194A28D800717189 /* BCPrayerRequestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556148194A28D800717189 /* BCPrayerRequestsViewController.m */; };
+		FC556165194A28D800717189 /* BCPrayerRequestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556148194A28D800717189 /* BCPrayerRequestsViewController.m */; };
+		FC556166194A28D800717189 /* BCWorshipScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55614A194A28D800717189 /* BCWorshipScheduleTableViewController.m */; };
+		FC556167194A28D800717189 /* BCWorshipScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55614A194A28D800717189 /* BCWorshipScheduleTableViewController.m */; };
+		FC556168194A28D800717189 /* NSString+IntegralSizing.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55614E194A28D800717189 /* NSString+IntegralSizing.m */; };
+		FC556169194A28D800717189 /* NSString+IntegralSizing.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55614E194A28D800717189 /* NSString+IntegralSizing.m */; };
+		FC55616A194A28D800717189 /* CLBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556150194A28D800717189 /* CLBlockOperation.m */; };
+		FC55616B194A28D800717189 /* CLBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556150194A28D800717189 /* CLBlockOperation.m */; };
+		FC55616C194A28D800717189 /* CLCommonToolkits.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556153194A28D800717189 /* CLCommonToolkits.m */; };
+		FC55616D194A28D800717189 /* CLCommonToolkits.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556153194A28D800717189 /* CLCommonToolkits.m */; };
+		FC55616E194A28D800717189 /* CLFadeInNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556155194A28D800717189 /* CLFadeInNavViewController.m */; };
+		FC55616F194A28D800717189 /* CLFadeInNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556155194A28D800717189 /* CLFadeInNavViewController.m */; };
+		FC556170194A28D800717189 /* CLNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556157194A28D800717189 /* CLNetworkService.m */; };
+		FC556171194A28D800717189 /* CLNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556157194A28D800717189 /* CLNetworkService.m */; };
+		FC556172194A28D800717189 /* CLPageIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556159194A28D800717189 /* CLPageIndicator.m */; };
+		FC556173194A28D800717189 /* CLPageIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556159194A28D800717189 /* CLPageIndicator.m */; };
+		FC556174194A28D800717189 /* CLSlideOutNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55615B194A28D800717189 /* CLSlideOutNavViewController.m */; };
+		FC556175194A28D800717189 /* CLSlideOutNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55615B194A28D800717189 /* CLSlideOutNavViewController.m */; };
 		FCB6C02419294A0D009330C7 /* BCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02319294A0D009330C7 /* BCRootViewController.m */; };
 		FCB6C02519294A0D009330C7 /* BCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02319294A0D009330C7 /* BCRootViewController.m */; };
-		FCB6C02819294B17009330C7 /* BCAnnouncementsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02719294B17009330C7 /* BCAnnouncementsTableViewController.m */; };
-		FCB6C02919294B17009330C7 /* BCAnnouncementsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02719294B17009330C7 /* BCAnnouncementsTableViewController.m */; };
-		FCB6C02C19294B25009330C7 /* BCBuildFaithTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02B19294B25009330C7 /* BCBuildFaithTableViewController.m */; };
-		FCB6C02D19294B25009330C7 /* BCBuildFaithTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02B19294B25009330C7 /* BCBuildFaithTableViewController.m */; };
-		FCB6C03019294B3B009330C7 /* BCChurchBasicInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02F19294B3B009330C7 /* BCChurchBasicInfoTableViewController.m */; };
-		FCB6C03119294B3B009330C7 /* BCChurchBasicInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02F19294B3B009330C7 /* BCChurchBasicInfoTableViewController.m */; };
-		FCB6C03419294B46009330C7 /* BCPrayerRequestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C03319294B46009330C7 /* BCPrayerRequestsViewController.m */; };
-		FCB6C03519294B46009330C7 /* BCPrayerRequestsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C03319294B46009330C7 /* BCPrayerRequestsViewController.m */; };
-		FCB6C03819294B51009330C7 /* BCWorshipScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C03719294B51009330C7 /* BCWorshipScheduleTableViewController.m */; };
-		FCB6C03919294B51009330C7 /* BCWorshipScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C03719294B51009330C7 /* BCWorshipScheduleTableViewController.m */; };
-		FCB6C03D19295BF2009330C7 /* NSString+IntegralSizing.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C03C19295BF2009330C7 /* NSString+IntegralSizing.m */; };
-		FCB6C03E19295BF2009330C7 /* NSString+IntegralSizing.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C03C19295BF2009330C7 /* NSString+IntegralSizing.m */; };
-		FCC51F711934D3A100948247 /* BCUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC51F701934D3A100948247 /* BCUserSettings.m */; };
-		FCC51F721934D3A100948247 /* BCUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC51F701934D3A100948247 /* BCUserSettings.m */; };
 		FCCC29021925A6AD00FF7B3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC29011925A6AD00FF7B3C /* Foundation.framework */; };
 		FCCC29041925A6AD00FF7B3C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC29031925A6AD00FF7B3C /* CoreGraphics.framework */; };
 		FCCC29061925A6AD00FF7B3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC29051925A6AD00FF7B3C /* UIKit.framework */; };
@@ -42,8 +50,6 @@
 		FCCC29231925A6AD00FF7B3C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC29071925A6AD00FF7B3C /* CoreData.framework */; };
 		FCCC292B1925A6AD00FF7B3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCCC29291925A6AD00FF7B3C /* InfoPlist.strings */; };
 		FCCC292D1925A6AD00FF7B3C /* NTCBCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC292C1925A6AD00FF7B3C /* NTCBCTests.m */; };
-		FCCC29391925A89900FF7B3C /* CLSlideOutNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC29381925A89900FF7B3C /* CLSlideOutNavViewController.m */; };
-		FCCC293A1925A89900FF7B3C /* CLSlideOutNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC29381925A89900FF7B3C /* CLSlideOutNavViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,26 +63,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FC1CB8CE1930E815008F8B7C /* CLNetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLNetworkService.h; sourceTree = "<group>"; };
-		FC1CB8CF1930E815008F8B7C /* CLNetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLNetworkService.m; sourceTree = "<group>"; };
-		FC1CB8D21930EA09008F8B7C /* CLBlockOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLBlockOperation.h; sourceTree = "<group>"; };
-		FC1CB8D31930EA09008F8B7C /* CLBlockOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLBlockOperation.m; sourceTree = "<group>"; };
+		FC55613E194A28D800717189 /* BCUserSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCUserSettings.h; sourceTree = "<group>"; };
+		FC55613F194A28D800717189 /* BCUserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCUserSettings.m; sourceTree = "<group>"; };
+		FC556141194A28D800717189 /* BCAnnouncementsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCAnnouncementsTableViewController.h; sourceTree = "<group>"; };
+		FC556142194A28D800717189 /* BCAnnouncementsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCAnnouncementsTableViewController.m; sourceTree = "<group>"; };
+		FC556143194A28D800717189 /* BCBuildFaithTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCBuildFaithTableViewController.h; sourceTree = "<group>"; };
+		FC556144194A28D800717189 /* BCBuildFaithTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCBuildFaithTableViewController.m; sourceTree = "<group>"; };
+		FC556145194A28D800717189 /* BCChurchBasicInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCChurchBasicInfoTableViewController.h; sourceTree = "<group>"; };
+		FC556146194A28D800717189 /* BCChurchBasicInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCChurchBasicInfoTableViewController.m; sourceTree = "<group>"; };
+		FC556147194A28D800717189 /* BCPrayerRequestsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCPrayerRequestsViewController.h; sourceTree = "<group>"; };
+		FC556148194A28D800717189 /* BCPrayerRequestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCPrayerRequestsViewController.m; sourceTree = "<group>"; };
+		FC556149194A28D800717189 /* BCWorshipScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCWorshipScheduleTableViewController.h; sourceTree = "<group>"; };
+		FC55614A194A28D800717189 /* BCWorshipScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCWorshipScheduleTableViewController.m; sourceTree = "<group>"; };
+		FC55614D194A28D800717189 /* NSString+IntegralSizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IntegralSizing.h"; sourceTree = "<group>"; };
+		FC55614E194A28D800717189 /* NSString+IntegralSizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IntegralSizing.m"; sourceTree = "<group>"; };
+		FC55614F194A28D800717189 /* CLBlockOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLBlockOperation.h; sourceTree = "<group>"; };
+		FC556150194A28D800717189 /* CLBlockOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLBlockOperation.m; sourceTree = "<group>"; };
+		FC556151194A28D800717189 /* CLCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCommon.h; sourceTree = "<group>"; };
+		FC556152194A28D800717189 /* CLCommonToolkits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCommonToolkits.h; sourceTree = "<group>"; };
+		FC556153194A28D800717189 /* CLCommonToolkits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCommonToolkits.m; sourceTree = "<group>"; };
+		FC556154194A28D800717189 /* CLFadeInNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLFadeInNavViewController.h; sourceTree = "<group>"; };
+		FC556155194A28D800717189 /* CLFadeInNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLFadeInNavViewController.m; sourceTree = "<group>"; };
+		FC556156194A28D800717189 /* CLNetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLNetworkService.h; sourceTree = "<group>"; };
+		FC556157194A28D800717189 /* CLNetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLNetworkService.m; sourceTree = "<group>"; };
+		FC556158194A28D800717189 /* CLPageIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPageIndicator.h; sourceTree = "<group>"; };
+		FC556159194A28D800717189 /* CLPageIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPageIndicator.m; sourceTree = "<group>"; };
+		FC55615A194A28D800717189 /* CLSlideOutNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLSlideOutNavViewController.h; sourceTree = "<group>"; };
+		FC55615B194A28D800717189 /* CLSlideOutNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLSlideOutNavViewController.m; sourceTree = "<group>"; };
 		FCB6C02219294A0C009330C7 /* BCRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCRootViewController.h; sourceTree = "<group>"; };
 		FCB6C02319294A0D009330C7 /* BCRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCRootViewController.m; sourceTree = "<group>"; };
-		FCB6C02619294B17009330C7 /* BCAnnouncementsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCAnnouncementsTableViewController.h; sourceTree = "<group>"; };
-		FCB6C02719294B17009330C7 /* BCAnnouncementsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCAnnouncementsTableViewController.m; sourceTree = "<group>"; };
-		FCB6C02A19294B25009330C7 /* BCBuildFaithTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCBuildFaithTableViewController.h; sourceTree = "<group>"; };
-		FCB6C02B19294B25009330C7 /* BCBuildFaithTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCBuildFaithTableViewController.m; sourceTree = "<group>"; };
-		FCB6C02E19294B3B009330C7 /* BCChurchBasicInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCChurchBasicInfoTableViewController.h; sourceTree = "<group>"; };
-		FCB6C02F19294B3B009330C7 /* BCChurchBasicInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCChurchBasicInfoTableViewController.m; sourceTree = "<group>"; };
-		FCB6C03219294B46009330C7 /* BCPrayerRequestsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCPrayerRequestsViewController.h; sourceTree = "<group>"; };
-		FCB6C03319294B46009330C7 /* BCPrayerRequestsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCPrayerRequestsViewController.m; sourceTree = "<group>"; };
-		FCB6C03619294B51009330C7 /* BCWorshipScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCWorshipScheduleTableViewController.h; sourceTree = "<group>"; };
-		FCB6C03719294B51009330C7 /* BCWorshipScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCWorshipScheduleTableViewController.m; sourceTree = "<group>"; };
-		FCB6C03B19295BF2009330C7 /* NSString+IntegralSizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IntegralSizing.h"; sourceTree = "<group>"; };
-		FCB6C03C19295BF2009330C7 /* NSString+IntegralSizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IntegralSizing.m"; sourceTree = "<group>"; };
-		FCC51F6F1934D3A100948247 /* BCUserSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCUserSettings.h; sourceTree = "<group>"; };
-		FCC51F701934D3A100948247 /* BCUserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCUserSettings.m; sourceTree = "<group>"; };
 		FCCC28FE1925A6AD00FF7B3C /* NTCBC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTCBC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCCC29011925A6AD00FF7B3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FCCC29031925A6AD00FF7B3C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -95,9 +110,6 @@
 		FCCC29281925A6AD00FF7B3C /* NTCBCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NTCBCTests-Info.plist"; sourceTree = "<group>"; };
 		FCCC292A1925A6AD00FF7B3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FCCC292C1925A6AD00FF7B3C /* NTCBCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTCBCTests.m; sourceTree = "<group>"; };
-		FCCC29371925A89900FF7B3C /* CLSlideOutNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLSlideOutNavViewController.h; sourceTree = "<group>"; };
-		FCCC29381925A89900FF7B3C /* CLSlideOutNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLSlideOutNavViewController.m; sourceTree = "<group>"; };
-		FCCC293F1925AAD100FF7B3C /* CLCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCommon.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,11 +138,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FCB6C03A19295BF2009330C7 /* Categories */ = {
+		FC55613A194A28D800717189 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FCB6C03B19295BF2009330C7 /* NSString+IntegralSizing.h */,
-				FCB6C03C19295BF2009330C7 /* NSString+IntegralSizing.m */,
+				FC55613B194A28D800717189 /* Interface */,
+				FC55614B194A28D800717189 /* Utilities */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FC55613B194A28D800717189 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				FC55613C194A28D800717189 /* Cells */,
+				FC55613D194A28D800717189 /* Helpers */,
+				FC556140194A28D800717189 /* ViewControllers */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		FC55613C194A28D800717189 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FC55613D194A28D800717189 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FC55613E194A28D800717189 /* BCUserSettings.h */,
+				FC55613F194A28D800717189 /* BCUserSettings.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FC556140194A28D800717189 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC556141194A28D800717189 /* BCAnnouncementsTableViewController.h */,
+				FC556142194A28D800717189 /* BCAnnouncementsTableViewController.m */,
+				FC556143194A28D800717189 /* BCBuildFaithTableViewController.h */,
+				FC556144194A28D800717189 /* BCBuildFaithTableViewController.m */,
+				FC556145194A28D800717189 /* BCChurchBasicInfoTableViewController.h */,
+				FC556146194A28D800717189 /* BCChurchBasicInfoTableViewController.m */,
+				FC556147194A28D800717189 /* BCPrayerRequestsViewController.h */,
+				FC556148194A28D800717189 /* BCPrayerRequestsViewController.m */,
+				FC556149194A28D800717189 /* BCWorshipScheduleTableViewController.h */,
+				FC55614A194A28D800717189 /* BCWorshipScheduleTableViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FC55614B194A28D800717189 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FC55614C194A28D800717189 /* Categories */,
+				FC55614F194A28D800717189 /* CLBlockOperation.h */,
+				FC556150194A28D800717189 /* CLBlockOperation.m */,
+				FC556151194A28D800717189 /* CLCommon.h */,
+				FC556152194A28D800717189 /* CLCommonToolkits.h */,
+				FC556153194A28D800717189 /* CLCommonToolkits.m */,
+				FC556154194A28D800717189 /* CLFadeInNavViewController.h */,
+				FC556155194A28D800717189 /* CLFadeInNavViewController.m */,
+				FC556156194A28D800717189 /* CLNetworkService.h */,
+				FC556157194A28D800717189 /* CLNetworkService.m */,
+				FC556158194A28D800717189 /* CLPageIndicator.h */,
+				FC556159194A28D800717189 /* CLPageIndicator.m */,
+				FC55615A194A28D800717189 /* CLSlideOutNavViewController.h */,
+				FC55615B194A28D800717189 /* CLSlideOutNavViewController.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FC55614C194A28D800717189 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FC55614D194A28D800717189 /* NSString+IntegralSizing.h */,
+				FC55614E194A28D800717189 /* NSString+IntegralSizing.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -169,25 +254,13 @@
 		FCCC29091925A6AD00FF7B3C /* NTCBC */ = {
 			isa = PBXGroup;
 			children = (
-				FCC51F6F1934D3A100948247 /* BCUserSettings.h */,
-				FCC51F701934D3A100948247 /* BCUserSettings.m */,
-				FCCC29361925A83F00FF7B3C /* Utilities */,
+				FC55613A194A28D800717189 /* Classes */,
 				FCCC29121925A6AD00FF7B3C /* BCAppDelegate.h */,
 				FCCC29131925A6AD00FF7B3C /* BCAppDelegate.m */,
 				FCCC29181925A6AD00FF7B3C /* Images.xcassets */,
 				FCCC29151925A6AD00FF7B3C /* NTCBC.xcdatamodeld */,
 				FCB6C02219294A0C009330C7 /* BCRootViewController.h */,
 				FCB6C02319294A0D009330C7 /* BCRootViewController.m */,
-				FCB6C02619294B17009330C7 /* BCAnnouncementsTableViewController.h */,
-				FCB6C02719294B17009330C7 /* BCAnnouncementsTableViewController.m */,
-				FCB6C02A19294B25009330C7 /* BCBuildFaithTableViewController.h */,
-				FCB6C02B19294B25009330C7 /* BCBuildFaithTableViewController.m */,
-				FCB6C02E19294B3B009330C7 /* BCChurchBasicInfoTableViewController.h */,
-				FCB6C02F19294B3B009330C7 /* BCChurchBasicInfoTableViewController.m */,
-				FCB6C03219294B46009330C7 /* BCPrayerRequestsViewController.h */,
-				FCB6C03319294B46009330C7 /* BCPrayerRequestsViewController.m */,
-				FCB6C03619294B51009330C7 /* BCWorshipScheduleTableViewController.h */,
-				FCB6C03719294B51009330C7 /* BCWorshipScheduleTableViewController.m */,
 				FCCC290A1925A6AD00FF7B3C /* Supporting Files */,
 			);
 			path = NTCBC;
@@ -220,21 +293,6 @@
 				FCCC29291925A6AD00FF7B3C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FCCC29361925A83F00FF7B3C /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				FCB6C03A19295BF2009330C7 /* Categories */,
-				FCCC29371925A89900FF7B3C /* CLSlideOutNavViewController.h */,
-				FCCC29381925A89900FF7B3C /* CLSlideOutNavViewController.m */,
-				FCCC293F1925AAD100FF7B3C /* CLCommon.h */,
-				FC1CB8CE1930E815008F8B7C /* CLNetworkService.h */,
-				FC1CB8CF1930E815008F8B7C /* CLNetworkService.m */,
-				FC1CB8D21930EA09008F8B7C /* CLBlockOperation.h */,
-				FC1CB8D31930EA09008F8B7C /* CLBlockOperation.m */,
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,20 +391,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCB6C03019294B3B009330C7 /* BCChurchBasicInfoTableViewController.m in Sources */,
-				FCCC29391925A89900FF7B3C /* CLSlideOutNavViewController.m in Sources */,
+				FC556162194A28D800717189 /* BCChurchBasicInfoTableViewController.m in Sources */,
 				FCB6C02419294A0D009330C7 /* BCRootViewController.m in Sources */,
-				FC1CB8D01930E815008F8B7C /* CLNetworkService.m in Sources */,
-				FC1CB8D41930EA09008F8B7C /* CLBlockOperation.m in Sources */,
+				FC55616C194A28D800717189 /* CLCommonToolkits.m in Sources */,
+				FC556174194A28D800717189 /* CLSlideOutNavViewController.m in Sources */,
 				FCCC29171925A6AD00FF7B3C /* NTCBC.xcdatamodeld in Sources */,
-				FCB6C03819294B51009330C7 /* BCWorshipScheduleTableViewController.m in Sources */,
-				FCB6C03D19295BF2009330C7 /* NSString+IntegralSizing.m in Sources */,
-				FCB6C02C19294B25009330C7 /* BCBuildFaithTableViewController.m in Sources */,
-				FCB6C02819294B17009330C7 /* BCAnnouncementsTableViewController.m in Sources */,
-				FCC51F711934D3A100948247 /* BCUserSettings.m in Sources */,
+				FC55616E194A28D800717189 /* CLFadeInNavViewController.m in Sources */,
+				FC556172194A28D800717189 /* CLPageIndicator.m in Sources */,
 				FCCC29101925A6AD00FF7B3C /* main.m in Sources */,
-				FCB6C03419294B46009330C7 /* BCPrayerRequestsViewController.m in Sources */,
+				FC556170194A28D800717189 /* CLNetworkService.m in Sources */,
+				FC55616A194A28D800717189 /* CLBlockOperation.m in Sources */,
+				FC556166194A28D800717189 /* BCWorshipScheduleTableViewController.m in Sources */,
+				FC556168194A28D800717189 /* NSString+IntegralSizing.m in Sources */,
+				FC556160194A28D800717189 /* BCBuildFaithTableViewController.m in Sources */,
+				FC55615E194A28D800717189 /* BCAnnouncementsTableViewController.m in Sources */,
 				FCCC29141925A6AD00FF7B3C /* BCAppDelegate.m in Sources */,
+				FC556164194A28D800717189 /* BCPrayerRequestsViewController.m in Sources */,
+				FC55615C194A28D800717189 /* BCUserSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,17 +415,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCC51F721934D3A100948247 /* BCUserSettings.m in Sources */,
-				FCB6C03119294B3B009330C7 /* BCChurchBasicInfoTableViewController.m in Sources */,
-				FC1CB8D11930E815008F8B7C /* CLNetworkService.m in Sources */,
-				FCCC293A1925A89900FF7B3C /* CLSlideOutNavViewController.m in Sources */,
-				FCB6C03519294B46009330C7 /* BCPrayerRequestsViewController.m in Sources */,
-				FCB6C02919294B17009330C7 /* BCAnnouncementsTableViewController.m in Sources */,
-				FC1CB8D51930EA0A008F8B7C /* CLBlockOperation.m in Sources */,
-				FCB6C02D19294B25009330C7 /* BCBuildFaithTableViewController.m in Sources */,
+				FC556163194A28D800717189 /* BCChurchBasicInfoTableViewController.m in Sources */,
+				FC556173194A28D800717189 /* CLPageIndicator.m in Sources */,
+				FC55615D194A28D800717189 /* BCUserSettings.m in Sources */,
+				FC55616B194A28D800717189 /* CLBlockOperation.m in Sources */,
+				FC556175194A28D800717189 /* CLSlideOutNavViewController.m in Sources */,
+				FC55616D194A28D800717189 /* CLCommonToolkits.m in Sources */,
+				FC55616F194A28D800717189 /* CLFadeInNavViewController.m in Sources */,
+				FC556165194A28D800717189 /* BCPrayerRequestsViewController.m in Sources */,
+				FC55615F194A28D800717189 /* BCAnnouncementsTableViewController.m in Sources */,
+				FC556161194A28D800717189 /* BCBuildFaithTableViewController.m in Sources */,
 				FCCC292D1925A6AD00FF7B3C /* NTCBCTests.m in Sources */,
-				FCB6C03919294B51009330C7 /* BCWorshipScheduleTableViewController.m in Sources */,
-				FCB6C03E19295BF2009330C7 /* NSString+IntegralSizing.m in Sources */,
+				FC556171194A28D800717189 /* CLNetworkService.m in Sources */,
+				FC556167194A28D800717189 /* BCWorshipScheduleTableViewController.m in Sources */,
+				FC556169194A28D800717189 /* NSString+IntegralSizing.m in Sources */,
 				FCB6C02519294A0D009330C7 /* BCRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,10 +543,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NTCBC/NTCBC-Prefix.pch";
 				INFOPLIST_FILE = "NTCBC/NTCBC-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/NTCBC/ThirdPartyLibs/GoogleDriveAPI/build/Debug-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -501,10 +562,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NTCBC/NTCBC-Prefix.pch";
 				INFOPLIST_FILE = "NTCBC/NTCBC-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/NTCBC/ThirdPartyLibs/GoogleDriveAPI/build/Debug-iphoneos",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",

@@ -11,16 +11,16 @@
 
 @implementation BCChurchBasicInfoTableViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
+- (instancetype)init {
+    self = [super init];
     if (self) {
+        //Testing data
         _titles = [[NSArray alloc] initWithObjects:@"Church Address", @"Telephone", @"Fax", @"Website", @"Email", nil];
         _churchInfo = [[NSDictionary alloc] initWithObjectsAndKeys:
-                       @"88 Finch Ave W. North York, Ontario, M2N 2H7", @"Church Address", 
+                       @"88 Finch Ave W. North York, Ontario, M2N 2H7", @"Church Address",
                        @"416 733 8088", @"Telephone",
                        @"416 733 2974", @"Fax",
-                       @"www.ntcbc.org", @"Website", 
+                       @"www.ntcbc.org", @"Website",
                        @"admin@ntcbc.org", @"Email", nil];
     }
     return self;
@@ -41,11 +41,13 @@
     [super viewDidLoad];
 
     self.navigationItem.title = @"Church Info";
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    _tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStyleGrouped];
+    _tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    _tableView.dataSource = self;
+    _tableView.delegate = self;
+    [self.view addSubview:_tableView];
+    
 }
 
 - (void)viewDidUnload
@@ -98,13 +100,6 @@
     return 1;
 }
 
-- (CGFloat)tableView:(UITableView *)tableVie heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if ([[_titles objectAtIndex:[indexPath section]] isEqualToString:@"Church Address"]) 
-        return self.tableView.rowHeight * 2;
-    else
-        return self.tableView.rowHeight;
-}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
@@ -120,56 +115,12 @@
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    //TO DO
 }
 
 @end
