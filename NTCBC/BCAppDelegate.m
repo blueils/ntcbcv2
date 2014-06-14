@@ -9,6 +9,7 @@
 #import "BCAppDelegate.h"
 #import <sys/utsname.h>
 #import "BCRootViewController.h"
+#import "CLCommon.h"
 
 @implementation BCAppDelegate
 
@@ -110,8 +111,8 @@
 }
 
 - (void)updateGlobalNavBarAppearance {
-    [[UINavigationBar appearance] setBarStyle: UIBarStyleBlack];
-    UIColor *tintColor = [UIColor whiteColor];
+    [[UINavigationBar appearance] setBarStyle: UIBarStyleDefault];
+    UIColor *tintColor = [UIColor darkTextColor];
     
     [[UINavigationBar appearance] setTintColor:tintColor];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : tintColor, NSFontAttributeName : [UIFont fontWithName:@"Avenir-Book" size:IsPad() ? 24 : 20]}];

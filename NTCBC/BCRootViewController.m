@@ -46,7 +46,6 @@
     } else {
         _slideOutView.barStyle = UIBarStyleDefault;
     }
-    _slideOutView.tintColor = [UIColor darkTextColor];
     _slideOutView.tableView.dataSource = self;
     _slideOutView.tableView.delegate = self;
     
@@ -151,20 +150,12 @@
 }
 
 - (NSArray *)leftBarButtonItems {
-    NSString *homeButtonTitle = NSLocalizedString(@"Home", @"Nav home button");
     UIButton *homeButton = [UIButton buttonWithType:UIButtonTypeSystem];
 	[homeButton addTarget:self action:@selector(toggleSlideOutMenu) forControlEvents:UIControlEventTouchUpInside];
-    [homeButton setTitle:homeButtonTitle forState:UIControlStateNormal];
+    [homeButton setImage:[[UIImage imageNamed:@"main_nav_button@2x.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
     
-    CGRect f = homeButton.bounds;
-    f.size = [homeButtonTitle integralSizeWithFont:homeButton.titleLabel.font constrainedToSize:CGSizeMake(CGFLOAT_MAX, 44.0) lineBreakMode:homeButton.titleLabel.lineBreakMode];
-    homeButton.frame = f;
-    
-    UIView *itemView = [[UIView alloc] initWithFrame:f];
-    itemView.backgroundColor = [UIColor clearColor];
-    
-    [itemView addSubview:homeButton];
-    return @[[[UIBarButtonItem alloc] initWithCustomView:itemView]];
+    [homeButton sizeToFit];
+    return @[[[UIBarButtonItem alloc] initWithCustomView:homeButton]];
 }
 
 #pragma mark
@@ -195,22 +186,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     BCNavIndex index = indexPath.row;
-    [self setSelectedIndex:index andUpdateSideMenu:NO];
+    if (indexPath.row == BCNavIndexBulletin)
+        [self setSelectedIndex:index andUpdateSideMenu:NO];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^(void){
         self.showSlideOutMenu = NO;
     });
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

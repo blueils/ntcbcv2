@@ -248,7 +248,7 @@
     if (self) {
         self.backgroundColor = [UIColor clearColor];
         self.textLabel.font = [UIFont fontWithName:@"Avenir-Book" size:16];
-        self.textLabel.textColor = [UIColor whiteColor];
+        self.textLabel.textColor = [UIColor darkTextColor];
         self.textLabel.highlightedTextColor = [UIColor colorWithRed: 25.0/255.0 green: 175.0/255.0 blue: 199.0/255.0 alpha: 1.0];
         self.imageView.tintColor = self.imageColor;
         self.selectionStyle = UITableViewCellSelectionStyleNone;
