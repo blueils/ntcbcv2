@@ -33,6 +33,12 @@
 		FC556173194A28D800717189 /* CLPageIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556159194A28D800717189 /* CLPageIndicator.m */; };
 		FC556174194A28D800717189 /* CLSlideOutNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55615B194A28D800717189 /* CLSlideOutNavViewController.m */; };
 		FC556175194A28D800717189 /* CLSlideOutNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55615B194A28D800717189 /* CLSlideOutNavViewController.m */; };
+		FC556178194A2CC400717189 /* BCBullitenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556177194A2CC400717189 /* BCBullitenTableViewCell.m */; };
+		FC556179194A2CC400717189 /* BCBullitenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556177194A2CC400717189 /* BCBullitenTableViewCell.m */; };
+		FC55617C194A316A00717189 /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55617B194A316A00717189 /* UIColor+RandomColor.m */; };
+		FC55617D194A316A00717189 /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55617B194A316A00717189 /* UIColor+RandomColor.m */; };
+		FC556180194A35E800717189 /* BCBulletinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55617F194A35E800717189 /* BCBulletinViewController.m */; };
+		FC556181194A35E800717189 /* BCBulletinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55617F194A35E800717189 /* BCBulletinViewController.m */; };
 		FCB6C02419294A0D009330C7 /* BCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02319294A0D009330C7 /* BCRootViewController.m */; };
 		FCB6C02519294A0D009330C7 /* BCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB6C02319294A0D009330C7 /* BCRootViewController.m */; };
 		FCCC29021925A6AD00FF7B3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCC29011925A6AD00FF7B3C /* Foundation.framework */; };
@@ -90,6 +96,12 @@
 		FC556159194A28D800717189 /* CLPageIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPageIndicator.m; sourceTree = "<group>"; };
 		FC55615A194A28D800717189 /* CLSlideOutNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLSlideOutNavViewController.h; sourceTree = "<group>"; };
 		FC55615B194A28D800717189 /* CLSlideOutNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLSlideOutNavViewController.m; sourceTree = "<group>"; };
+		FC556176194A2CC400717189 /* BCBullitenTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCBullitenTableViewCell.h; sourceTree = "<group>"; };
+		FC556177194A2CC400717189 /* BCBullitenTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCBullitenTableViewCell.m; sourceTree = "<group>"; };
+		FC55617A194A316A00717189 /* UIColor+RandomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RandomColor.h"; sourceTree = "<group>"; };
+		FC55617B194A316A00717189 /* UIColor+RandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RandomColor.m"; sourceTree = "<group>"; };
+		FC55617E194A35E800717189 /* BCBulletinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCBulletinViewController.h; sourceTree = "<group>"; };
+		FC55617F194A35E800717189 /* BCBulletinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCBulletinViewController.m; sourceTree = "<group>"; };
 		FCB6C02219294A0C009330C7 /* BCRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCRootViewController.h; sourceTree = "<group>"; };
 		FCB6C02319294A0D009330C7 /* BCRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCRootViewController.m; sourceTree = "<group>"; };
 		FCCC28FE1925A6AD00FF7B3C /* NTCBC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTCBC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +172,8 @@
 		FC55613C194A28D800717189 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				FC556176194A2CC400717189 /* BCBullitenTableViewCell.h */,
+				FC556177194A2CC400717189 /* BCBullitenTableViewCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -186,6 +200,8 @@
 				FC556148194A28D800717189 /* BCPrayerRequestsViewController.m */,
 				FC556149194A28D800717189 /* BCWorshipScheduleTableViewController.h */,
 				FC55614A194A28D800717189 /* BCWorshipScheduleTableViewController.m */,
+				FC55617E194A35E800717189 /* BCBulletinViewController.h */,
+				FC55617F194A35E800717189 /* BCBulletinViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -216,6 +232,8 @@
 			children = (
 				FC55614D194A28D800717189 /* NSString+IntegralSizing.h */,
 				FC55614E194A28D800717189 /* NSString+IntegralSizing.m */,
+				FC55617A194A316A00717189 /* UIColor+RandomColor.h */,
+				FC55617B194A316A00717189 /* UIColor+RandomColor.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -400,11 +418,14 @@
 				FC556172194A28D800717189 /* CLPageIndicator.m in Sources */,
 				FCCC29101925A6AD00FF7B3C /* main.m in Sources */,
 				FC556170194A28D800717189 /* CLNetworkService.m in Sources */,
+				FC556178194A2CC400717189 /* BCBullitenTableViewCell.m in Sources */,
 				FC55616A194A28D800717189 /* CLBlockOperation.m in Sources */,
 				FC556166194A28D800717189 /* BCWorshipScheduleTableViewController.m in Sources */,
 				FC556168194A28D800717189 /* NSString+IntegralSizing.m in Sources */,
+				FC55617C194A316A00717189 /* UIColor+RandomColor.m in Sources */,
 				FC556160194A28D800717189 /* BCBuildFaithTableViewController.m in Sources */,
 				FC55615E194A28D800717189 /* BCAnnouncementsTableViewController.m in Sources */,
+				FC556180194A35E800717189 /* BCBulletinViewController.m in Sources */,
 				FCCC29141925A6AD00FF7B3C /* BCAppDelegate.m in Sources */,
 				FC556164194A28D800717189 /* BCPrayerRequestsViewController.m in Sources */,
 				FC55615C194A28D800717189 /* BCUserSettings.m in Sources */,
@@ -421,11 +442,14 @@
 				FC55616B194A28D800717189 /* CLBlockOperation.m in Sources */,
 				FC556175194A28D800717189 /* CLSlideOutNavViewController.m in Sources */,
 				FC55616D194A28D800717189 /* CLCommonToolkits.m in Sources */,
+				FC556181194A35E800717189 /* BCBulletinViewController.m in Sources */,
 				FC55616F194A28D800717189 /* CLFadeInNavViewController.m in Sources */,
 				FC556165194A28D800717189 /* BCPrayerRequestsViewController.m in Sources */,
 				FC55615F194A28D800717189 /* BCAnnouncementsTableViewController.m in Sources */,
 				FC556161194A28D800717189 /* BCBuildFaithTableViewController.m in Sources */,
 				FCCC292D1925A6AD00FF7B3C /* NTCBCTests.m in Sources */,
+				FC55617D194A316A00717189 /* UIColor+RandomColor.m in Sources */,
+				FC556179194A2CC400717189 /* BCBullitenTableViewCell.m in Sources */,
 				FC556171194A28D800717189 /* CLNetworkService.m in Sources */,
 				FC556167194A28D800717189 /* BCWorshipScheduleTableViewController.m in Sources */,
 				FC556169194A28D800717189 /* NSString+IntegralSizing.m in Sources */,

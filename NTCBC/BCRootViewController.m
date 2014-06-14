@@ -7,11 +7,7 @@
 //
 
 #import "BCRootViewController.h"
-#import "BCChurchBasicInfoTableViewController.h"
-#import "BCWorshipScheduleTableViewController.h"
-#import "BCAnnouncementsTableViewController.h"
-#import "BCPrayerRequestsViewController.h"
-#import "BCBuildFaithTableViewController.h"
+#import "BCBulletinViewController.h"
 #import "CLCommon.h"
 #import "NSString+IntegralSizing.h"
 #import "BCUserSettings.h"
@@ -27,31 +23,11 @@
 {
     self = [super init];
     if (self) {
-        BCChurchBasicInfoTableViewController *infoController = [[BCChurchBasicInfoTableViewController alloc] init];
-        infoController.navigationItem.leftBarButtonItems = [self leftBarButtonItems];
-        UINavigationController *infoNavController = [[UINavigationController alloc] initWithRootViewController:infoController];
-        
-        BCWorshipScheduleTableViewController *scheduleController = [[BCWorshipScheduleTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
-        scheduleController.navigationItem.leftBarButtonItems = [self leftBarButtonItems];
-        UINavigationController *scheduleNavController = [[UINavigationController alloc] initWithRootViewController:scheduleController];
-        
-        BCAnnouncementsTableViewController *announcementsController = [[BCAnnouncementsTableViewController alloc] initWithStyle:UITableViewStylePlain];
-        announcementsController.navigationItem.leftBarButtonItems = [self leftBarButtonItems];
-        UINavigationController *announcementsNavController = [[UINavigationController alloc] initWithRootViewController:announcementsController];
-        
-        BCPrayerRequestsViewController * requestController = [[BCPrayerRequestsViewController alloc] init];
-        requestController.navigationItem.leftBarButtonItems = [self leftBarButtonItems];
-        UINavigationController *requestNavController = [[UINavigationController alloc] initWithRootViewController:requestController];
-        
-        BCBuildFaithTableViewController * faithController = [[BCBuildFaithTableViewController alloc] initWithStyle:UITableViewStylePlain];
-        faithController.navigationItem.leftBarButtonItems = [self leftBarButtonItems];
-        UINavigationController *faithNavController = [[UINavigationController alloc] initWithRootViewController:faithController];
-        //[self.navigationController pushViewController:faithController animated:YES];
-        
-        _viewControllers = @[infoNavController, scheduleNavController, announcementsNavController, requestNavController, faithNavController];
-        
-        _sideNavTitles = @[@"Church Info", @"Worship Schedules", @"Announcements", @"Weekly Prayer Requests", @"Build Up Your Faith"/*, @"General Information"*/];
-        
+        BCBulletinViewController *bulletinController = [[BCBulletinViewController alloc] init];
+        bulletinController.navigationItem.leftBarButtonItems = [self leftBarButtonItems];
+        UINavigationController *bulletinNavController = [[UINavigationController alloc] initWithRootViewController:bulletinController];
+        _viewControllers = @[bulletinNavController];
+        _sideNavTitles = @[@"Sunday Bulletin", @"Prayer Request", @"Special Event", @"My Account", @"Feedback"];
         _selectedIndex = [BCUserSettings latestNavIndex];
         
         [self addChildViewController:self.currentViewController];
@@ -66,9 +42,11 @@
 {
     [super viewDidLoad];
     if (IsBlurringAvailable() == NO) {
-        _slideOutView.barTintColor = [UIColor colorWithWhite:0.07 alpha:0.97];
+        _slideOutView.barTintColor = [UIColor colorWithWhite:1.0 alpha:0.8];
+    } else {
+        _slideOutView.barStyle = UIBarStyleDefault;
     }
-    
+    _slideOutView.tintColor = [UIColor darkTextColor];
     _slideOutView.tableView.dataSource = self;
     _slideOutView.tableView.delegate = self;
     
@@ -111,7 +89,7 @@
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
-    return UIStatusBarStyleLightContent;
+    return UIStatusBarStyleDefault;
 }
 
 - (BOOL)prefersStatusBarHidden {
@@ -174,7 +152,7 @@
 
 - (NSArray *)leftBarButtonItems {
     NSString *homeButtonTitle = NSLocalizedString(@"Home", @"Nav home button");
-    UIButton *homeButton = [[UIButton alloc] initWithFrame:CGRectZero];
+    UIButton *homeButton = [UIButton buttonWithType:UIButtonTypeSystem];
 	[homeButton addTarget:self action:@selector(toggleSlideOutMenu) forControlEvents:UIControlEventTouchUpInside];
     [homeButton setTitle:homeButtonTitle forState:UIControlStateNormal];
     
@@ -186,41 +164,7 @@
     itemView.backgroundColor = [UIColor clearColor];
     
     [itemView addSubview:homeButton];
-    /*
-    UIEdgeInsets buttonEdgeInsets = UIEdgeInsetsZero;
-    buttonEdgeInsets.top = floorf((f.size.height - [homeButton imageForState:UIControlStateNormal].size.height) / 2.0);
-    buttonEdgeInsets.bottom = buttonEdgeInsets.top;
-    buttonEdgeInsets.right = f.size.width - [homeButton imageForState:UIControlStateNormal].size.width;
-    homeButton.contentEdgeInsets = buttonEdgeInsets;
-    
-    if (title.length > 0) {
-        KBTintedLabel *titleLabel = [[KBTintedLabel alloc] initWithFrame:CGRectZero];
-        titleLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-        titleLabel.backgroundColor = [UIColor clearColor];
-        titleLabel.textAlignment = NSTextAlignmentLeft;
-        titleLabel.font = [UIFont [UIFont fontWithName:@"Avenir-Book" size:IsPad() ? 24 : 20];
-        titleLabel.text = title;
-        titleLabel.userInteractionEnabled = NO;
-        [titleLabel sizeToFit];
-        
-        f.size.width += (IsPad() ? 2 : -9) + titleLabel.bounds.size.width;
-        itemView.frame = f;
-        
-        f = titleLabel.frame;
-        f.origin.x = itemView.bounds.size.width - f.size.width;
-        f.origin.y = roundf((itemView.bounds.size.height - f.size.height) / 2.0) + 1;
-        titleLabel.frame = f;
-        [itemView addSubview:titleLabel];
-        
-        buttonEdgeInsets.right += itemView.bounds.size.width - homeButton.bounds.size.width;
-        homeButton.contentEdgeInsets = buttonEdgeInsets;
-        homeButton.frame = itemView.bounds;
-    }
-    
-    UIBarButtonItem *fixedSpaceItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-    fixedSpaceItem.width = IsPad() ? -4 : -5;
-    */
-    return @[[[UIBarButtonItem alloc] initWithCustomView:itemView]];// @[fixedSpaceItem, [[UIBarButtonItem alloc] initWithCustomView:itemView]];
+    return @[[[UIBarButtonItem alloc] initWithCustomView:itemView]];
 }
 
 #pragma mark
