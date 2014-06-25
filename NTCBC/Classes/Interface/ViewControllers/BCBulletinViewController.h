@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 
 enum {
-    BCBulletinIndexBasicInfo = 0,
-    BCBulletinIndexSchedule,
-    BCBulletinIndexAnnouncements,
-    BCBulletinIndexPrayers,
-    BCBulletinIndexBuildFaith,
+    BCBulletinIndexService = 0,
+    BCBulletinIndexNotes,
+    BCBulletinIndexSS,
+    BCBulletinIndexEvents,
+    BCBulletinIndexPrayerRequests,
     
     BCBulletinIndexTotal
 };

@@ -7,7 +7,11 @@
 //
 
 #import "BCRootViewController.h"
+#import "BCChurchBasicInfoTableViewController.h"
 #import "BCBulletinViewController.h"
+#import "BCContactsViewController.h"
+#import "BCProfileViewController.h"
+#import "BCGeneralAboutViewController.h"
 #import "CLCommon.h"
 #import "NSString+IntegralSizing.h"
 #import "BCUserSettings.h"
@@ -26,8 +30,26 @@
         BCBulletinViewController *bulletinController = [[BCBulletinViewController alloc] init];
         bulletinController.navigationItem.leftBarButtonItems = [self leftBarButtonItems];
         UINavigationController *bulletinNavController = [[UINavigationController alloc] initWithRootViewController:bulletinController];
-        _viewControllers = @[bulletinNavController];
-        _sideNavTitles = @[@"Sunday Bulletin", @"Prayer Request", @"Special Event", @"My Account", @"Feedback"];
+        
+        BCChurchBasicInfoTableViewController *infoController = [[BCChurchBasicInfoTableViewController alloc] init];
+        infoController.navigationItem.leftBarButtonItems = [self leftBarButtonItems];
+        UINavigationController *infoNavController = [[UINavigationController alloc] initWithRootViewController:infoController];
+        
+        BCProfileViewController *profileController = [[BCProfileViewController alloc] init];
+        profileController.navigationItem.leftBarButtonItems = [self leftBarButtonItems];
+        UINavigationController *profileNavController = [[UINavigationController alloc] initWithRootViewController:profileController];
+        
+        BCContactsViewController *contactsController = [[BCContactsViewController alloc] init];
+        contactsController.navigationItem.leftBarButtonItems = [self leftBarButtonItems];
+        UINavigationController *contactNavController = [[UINavigationController alloc] initWithRootViewController:contactsController];
+        
+        BCGeneralAboutViewController *aboutController = [[BCGeneralAboutViewController alloc] init];
+        aboutController.navigationItem.leftBarButtonItems = [self leftBarButtonItems];
+        UINavigationController *aboutNavController = [[UINavigationController alloc] initWithRootViewController:aboutController];
+        
+        _viewControllers = @[infoNavController, bulletinNavController, contactNavController, profileNavController, aboutNavController];
+        
+        _sideNavTitles = @[@"My NTCBC", @"My Bulletins", @"My Contacts", @"My Profiles", @"About This App"];
         _selectedIndex = [BCUserSettings latestNavIndex];
         
         [self addChildViewController:self.currentViewController];
@@ -152,7 +174,7 @@
 - (NSArray *)leftBarButtonItems {
     UIButton *homeButton = [UIButton buttonWithType:UIButtonTypeSystem];
 	[homeButton addTarget:self action:@selector(toggleSlideOutMenu) forControlEvents:UIControlEventTouchUpInside];
-    [homeButton setImage:[[UIImage imageNamed:@"main_nav_button@2x.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
+    [homeButton setImage:[[UIImage imageNamed:@"main_nav_button.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
     
     [homeButton sizeToFit];
     return @[[[UIBarButtonItem alloc] initWithCustomView:homeButton]];
@@ -186,8 +208,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     BCNavIndex index = indexPath.row;
-    if (indexPath.row == BCNavIndexBulletin)
-        [self setSelectedIndex:index andUpdateSideMenu:NO];
+    [self setSelectedIndex:index andUpdateSideMenu:NO];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^(void){
         self.showSlideOutMenu = NO;

@@ -7,17 +7,14 @@
 //
 
 #import "BCBulletinViewController.h"
-#import "BCChurchBasicInfoTableViewController.h"
 #import "BCWorshipScheduleTableViewController.h"
 #import "BCAnnouncementsTableViewController.h"
 #import "BCPrayerRequestsViewController.h"
 #import "BCBuildFaithTableViewController.h"
+#import "BCSSInfoViewController.h"
+#import "BCSermonNotesViewController.h"
 #import "BCBullitenTableViewCell.h"
 #import "UIColor+RandomColor.h"
-
-@interface BCBulletinViewController ()
-
-@end
 
 @implementation BCBulletinViewController
 
@@ -25,7 +22,7 @@
 {
     self = [super init];
     if (self) {
-        _bulletinSections = @[@"Church Info", @"Worship Schedules", @"Announcements", @"Weekly Prayer Requests", @"Build Up Your Faith", @"General Information"];
+        _bulletinSections = @[@"Sunday Service", @"Sermon Notes", @"Sunday Schools", @"Church Events", @"Weekly Prayer Requests"];
         _funColorList = [UIColor listOfRandomColorWithLength:[_bulletinSections count]];
     }
     return self;
@@ -81,25 +78,24 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIViewController * viewController = nil;
     switch (indexPath.row) {
-        case BCBulletinIndexBasicInfo: {
-            viewController = [[BCChurchBasicInfoTableViewController alloc] init];
-            
-            break;
-        }
-        case BCBulletinIndexSchedule: {
+        case BCBulletinIndexService: {
             viewController = [[BCWorshipScheduleTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
             break;
         }
-        case BCBulletinIndexAnnouncements: {
-            viewController = [[BCAnnouncementsTableViewController alloc] initWithStyle:UITableViewStylePlain];
+        case BCBulletinIndexNotes: {
+            viewController = [[BCSermonNotesViewController alloc] init];
             break;
         }
-        case BCBulletinIndexPrayers: {
+        case BCBulletinIndexSS: {
+            viewController = [[BCSSInfoViewController alloc] init];
+            break;
+        }
+        case BCBulletinIndexEvents: {
+            viewController = [[BCAnnouncementsTableViewController alloc] init];
+            break;
+        }
+        case BCBulletinIndexPrayerRequests: {
             viewController = [[BCPrayerRequestsViewController alloc] init];
-            break;
-        }
-        case BCBulletinIndexBuildFaith: {
-            viewController = [[BCBuildFaithTableViewController alloc] initWithStyle:UITableViewStylePlain];
             break;
         }
     }

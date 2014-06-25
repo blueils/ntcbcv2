@@ -9,11 +9,11 @@
 #import "CLSlideOutNavViewController.h"
 
 enum {
-    BCNavIndexBulletin = 0,
-    BCNavIndexPrayerRequest,
-    BCNavIndexEvents,
-    BCNavIndexAccount,
-    BCNavIndexFeedback,
+    BCNavIndexBasicInfo = 0,
+    BCNavIndexBulletins,
+    BCNavIndexContacts,
+    BCNavIndexProfile,
+    BCNavIndexAbout,
 //    BCNavIndexSchedule,
 //    BCNavIndexAnnouncements,
 //    BCNavIndexPrayers,

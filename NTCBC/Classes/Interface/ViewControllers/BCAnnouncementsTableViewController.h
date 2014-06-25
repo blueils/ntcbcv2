@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BCAnnouncementsTableViewController : UITableViewController {
+@interface BCAnnouncementsTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
     NSArray *_items;
+    
+    UITableView *_tableView;
 }
 
 @end
