@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BCChurchBasicInfoTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>{
-    NSArray * _titles;
-    UITableView *_tableView;
-    NSDictionary * _churchInfo;
+@interface BCChurchBasicInfoTableViewController : UIViewController {
+    UIScrollView *_backgroundScrollView;
+    UIView * _welcomeView;
+    UIView * _missionView;
+    UIView * _contactInfoView;
 }
 
 @end

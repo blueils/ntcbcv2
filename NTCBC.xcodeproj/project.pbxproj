@@ -19,6 +19,10 @@
 		4C1F6970195B117C00C31597 /* BCSermonNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F696E195B117C00C31597 /* BCSermonNotesViewController.m */; };
 		4C1F6974195B138100C31597 /* BCTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F6973195B138100C31597 /* BCTableHeaderView.m */; };
 		4C1F6975195B138100C31597 /* BCTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F6973195B138100C31597 /* BCTableHeaderView.m */; };
+		4CBD6E01195F21E300EF576C /* UIFont+NTCBC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBD6E00195F21E300EF576C /* UIFont+NTCBC.m */; };
+		4CBD6E02195F21E300EF576C /* UIFont+NTCBC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBD6E00195F21E300EF576C /* UIFont+NTCBC.m */; };
+		4CBD6E04195F279000EF576C /* welcome_banner@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CBD6E03195F279000EF576C /* welcome_banner@2x.jpg */; };
+		4CBD6E05195F279000EF576C /* welcome_banner@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CBD6E03195F279000EF576C /* welcome_banner@2x.jpg */; };
 		FC55615C194A28D800717189 /* BCUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55613F194A28D800717189 /* BCUserSettings.m */; };
 		FC55615D194A28D800717189 /* BCUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55613F194A28D800717189 /* BCUserSettings.m */; };
 		FC55615E194A28D800717189 /* BCAnnouncementsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556142194A28D800717189 /* BCAnnouncementsTableViewController.m */; };
@@ -95,6 +99,9 @@
 		4C1F696E195B117C00C31597 /* BCSermonNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCSermonNotesViewController.m; sourceTree = "<group>"; };
 		4C1F6972195B138100C31597 /* BCTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCTableHeaderView.h; sourceTree = "<group>"; };
 		4C1F6973195B138100C31597 /* BCTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCTableHeaderView.m; sourceTree = "<group>"; };
+		4CBD6DFF195F21E300EF576C /* UIFont+NTCBC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+NTCBC.h"; sourceTree = "<group>"; };
+		4CBD6E00195F21E300EF576C /* UIFont+NTCBC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+NTCBC.m"; sourceTree = "<group>"; };
+		4CBD6E03195F279000EF576C /* welcome_banner@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "welcome_banner@2x.jpg"; sourceTree = "<group>"; };
 		FC55613E194A28D800717189 /* BCUserSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCUserSettings.h; sourceTree = "<group>"; };
 		FC55613F194A28D800717189 /* BCUserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCUserSettings.m; sourceTree = "<group>"; };
 		FC556141194A28D800717189 /* BCAnnouncementsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCAnnouncementsTableViewController.h; sourceTree = "<group>"; };
@@ -202,6 +209,8 @@
 				FC55613C194A28D800717189 /* Cells */,
 				FC55613D194A28D800717189 /* Helpers */,
 				FC556140194A28D800717189 /* ViewControllers */,
+				4CBD6DFF195F21E300EF576C /* UIFont+NTCBC.h */,
+				4CBD6E00195F21E300EF576C /* UIFont+NTCBC.m */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -312,6 +321,7 @@
 		FC556185194BD5D300717189 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4CBD6E03195F279000EF576C /* welcome_banner@2x.jpg */,
 				FC556186194BD5D300717189 /* main_nav_button@2x.png */,
 			);
 			path = Shared;
@@ -472,6 +482,7 @@
 				FCCC290E1925A6AD00FF7B3C /* InfoPlist.strings in Resources */,
 				FCCC29191925A6AD00FF7B3C /* Images.xcassets in Resources */,
 				FC556187194BD5D300717189 /* main_nav_button@2x.png in Resources */,
+				4CBD6E04195F279000EF576C /* welcome_banner@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCCC292B1925A6AD00FF7B3C /* InfoPlist.strings in Resources */,
+				4CBD6E05195F279000EF576C /* welcome_banner@2x.jpg in Resources */,
 				FC556188194BD5D300717189 /* main_nav_button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +528,7 @@
 				FC556180194A35E800717189 /* BCBulletinViewController.m in Sources */,
 				FCCC29141925A6AD00FF7B3C /* BCAppDelegate.m in Sources */,
 				FC556164194A28D800717189 /* BCPrayerRequestsViewController.m in Sources */,
+				4CBD6E01195F21E300EF576C /* UIFont+NTCBC.m in Sources */,
 				FC55615C194A28D800717189 /* BCUserSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,6 +560,7 @@
 				FC556167194A28D800717189 /* BCWorshipScheduleTableViewController.m in Sources */,
 				FC556169194A28D800717189 /* NSString+IntegralSizing.m in Sources */,
 				FCB6C02519294A0D009330C7 /* BCRootViewController.m in Sources */,
+				4CBD6E02195F21E300EF576C /* UIFont+NTCBC.m in Sources */,
 				4C1F696C195B112600C31597 /* BCSSInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
