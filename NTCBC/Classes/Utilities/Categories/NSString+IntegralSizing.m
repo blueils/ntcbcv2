@@ -1,6 +1,5 @@
 //
 //  NSString+IntegralSizing.m
-//  Kobov3
 //
 //  Created by Michael Chung-Ching Lan on 2/13/2014.
 //  Copyright (c) 2014 Kobo Inc. All rights reserved.
@@ -27,7 +26,7 @@
 
 
 - (CGSize)integralSizeWithFont: (UIFont *)font constrainedToSize:(CGSize)maxSize lineBreakMode: (NSLineBreakMode)lineBreakMode {
-    NSDictionary *attributes = @{NSFontAttributeName: font};
+    NSDictionary *attributes = font != nil ? @{NSFontAttributeName: font} : nil;
     NSStringDrawingOptions options;
     
     switch (lineBreakMode) {
@@ -46,5 +45,4 @@
     CGRect rect = CGRectIntegral([self boundingRectWithSize:maxSize options:options attributes:attributes context:nil]);
     return rect.size;
 }
-
 @end

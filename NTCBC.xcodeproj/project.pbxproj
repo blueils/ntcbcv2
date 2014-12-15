@@ -23,6 +23,18 @@
 		4CBD6E02195F21E300EF576C /* UIFont+NTCBC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBD6E00195F21E300EF576C /* UIFont+NTCBC.m */; };
 		4CBD6E04195F279000EF576C /* welcome_banner@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CBD6E03195F279000EF576C /* welcome_banner@2x.jpg */; };
 		4CBD6E05195F279000EF576C /* welcome_banner@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CBD6E03195F279000EF576C /* welcome_banner@2x.jpg */; };
+		4CFB036D1A3F940B00B997AC /* NSAttributedString+IntegralSizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB03641A3F940B00B997AC /* NSAttributedString+IntegralSizing.m */; };
+		4CFB036E1A3F940B00B997AC /* NSAttributedString+IntegralSizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB03641A3F940B00B997AC /* NSAttributedString+IntegralSizing.m */; };
+		4CFB036F1A3F940B00B997AC /* NSDate+MobileAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB03661A3F940B00B997AC /* NSDate+MobileAPI.m */; };
+		4CFB03701A3F940B00B997AC /* NSDate+MobileAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB03661A3F940B00B997AC /* NSDate+MobileAPI.m */; };
+		4CFB03711A3F940B00B997AC /* NSManagedObjectContext+ChildContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB03681A3F940B00B997AC /* NSManagedObjectContext+ChildContext.m */; };
+		4CFB03721A3F940B00B997AC /* NSManagedObjectContext+ChildContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB03681A3F940B00B997AC /* NSManagedObjectContext+ChildContext.m */; };
+		4CFB03731A3F940B00B997AC /* NSManagedObjectContext+FetchedObjectFromURI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB036A1A3F940B00B997AC /* NSManagedObjectContext+FetchedObjectFromURI.m */; };
+		4CFB03741A3F940B00B997AC /* NSManagedObjectContext+FetchedObjectFromURI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB036A1A3F940B00B997AC /* NSManagedObjectContext+FetchedObjectFromURI.m */; };
+		4CFB03751A3F940B00B997AC /* NSString+HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB036C1A3F940B00B997AC /* NSString+HTMLEntities.m */; };
+		4CFB03761A3F940B00B997AC /* NSString+HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB036C1A3F940B00B997AC /* NSString+HTMLEntities.m */; };
+		4CFB03791A3F941E00B997AC /* CLEmptyStateScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB03781A3F941E00B997AC /* CLEmptyStateScreen.m */; };
+		4CFB037A1A3F941E00B997AC /* CLEmptyStateScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB03781A3F941E00B997AC /* CLEmptyStateScreen.m */; };
 		FC55615C194A28D800717189 /* BCUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55613F194A28D800717189 /* BCUserSettings.m */; };
 		FC55615D194A28D800717189 /* BCUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55613F194A28D800717189 /* BCUserSettings.m */; };
 		FC55615E194A28D800717189 /* BCAnnouncementsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556142194A28D800717189 /* BCAnnouncementsTableViewController.m */; };
@@ -102,6 +114,18 @@
 		4CBD6DFF195F21E300EF576C /* UIFont+NTCBC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+NTCBC.h"; sourceTree = "<group>"; };
 		4CBD6E00195F21E300EF576C /* UIFont+NTCBC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+NTCBC.m"; sourceTree = "<group>"; };
 		4CBD6E03195F279000EF576C /* welcome_banner@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "welcome_banner@2x.jpg"; sourceTree = "<group>"; };
+		4CFB03631A3F940B00B997AC /* NSAttributedString+IntegralSizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+IntegralSizing.h"; sourceTree = "<group>"; };
+		4CFB03641A3F940B00B997AC /* NSAttributedString+IntegralSizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+IntegralSizing.m"; sourceTree = "<group>"; };
+		4CFB03651A3F940B00B997AC /* NSDate+MobileAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MobileAPI.h"; sourceTree = "<group>"; };
+		4CFB03661A3F940B00B997AC /* NSDate+MobileAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MobileAPI.m"; sourceTree = "<group>"; };
+		4CFB03671A3F940B00B997AC /* NSManagedObjectContext+ChildContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+ChildContext.h"; sourceTree = "<group>"; };
+		4CFB03681A3F940B00B997AC /* NSManagedObjectContext+ChildContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+ChildContext.m"; sourceTree = "<group>"; };
+		4CFB03691A3F940B00B997AC /* NSManagedObjectContext+FetchedObjectFromURI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+FetchedObjectFromURI.h"; sourceTree = "<group>"; };
+		4CFB036A1A3F940B00B997AC /* NSManagedObjectContext+FetchedObjectFromURI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+FetchedObjectFromURI.m"; sourceTree = "<group>"; };
+		4CFB036B1A3F940B00B997AC /* NSString+HTMLEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTMLEntities.h"; sourceTree = "<group>"; };
+		4CFB036C1A3F940B00B997AC /* NSString+HTMLEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTMLEntities.m"; sourceTree = "<group>"; };
+		4CFB03771A3F941E00B997AC /* CLEmptyStateScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLEmptyStateScreen.h; sourceTree = "<group>"; };
+		4CFB03781A3F941E00B997AC /* CLEmptyStateScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLEmptyStateScreen.m; sourceTree = "<group>"; };
 		FC55613E194A28D800717189 /* BCUserSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCUserSettings.h; sourceTree = "<group>"; };
 		FC55613F194A28D800717189 /* BCUserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCUserSettings.m; sourceTree = "<group>"; };
 		FC556141194A28D800717189 /* BCAnnouncementsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCAnnouncementsTableViewController.h; sourceTree = "<group>"; };
@@ -279,6 +303,8 @@
 				FC556159194A28D800717189 /* CLPageIndicator.m */,
 				FC55615A194A28D800717189 /* CLSlideOutNavViewController.h */,
 				FC55615B194A28D800717189 /* CLSlideOutNavViewController.m */,
+				4CFB03771A3F941E00B997AC /* CLEmptyStateScreen.h */,
+				4CFB03781A3F941E00B997AC /* CLEmptyStateScreen.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -286,6 +312,16 @@
 		FC55614C194A28D800717189 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				4CFB03631A3F940B00B997AC /* NSAttributedString+IntegralSizing.h */,
+				4CFB03641A3F940B00B997AC /* NSAttributedString+IntegralSizing.m */,
+				4CFB03651A3F940B00B997AC /* NSDate+MobileAPI.h */,
+				4CFB03661A3F940B00B997AC /* NSDate+MobileAPI.m */,
+				4CFB03671A3F940B00B997AC /* NSManagedObjectContext+ChildContext.h */,
+				4CFB03681A3F940B00B997AC /* NSManagedObjectContext+ChildContext.m */,
+				4CFB03691A3F940B00B997AC /* NSManagedObjectContext+FetchedObjectFromURI.h */,
+				4CFB036A1A3F940B00B997AC /* NSManagedObjectContext+FetchedObjectFromURI.m */,
+				4CFB036B1A3F940B00B997AC /* NSString+HTMLEntities.h */,
+				4CFB036C1A3F940B00B997AC /* NSString+HTMLEntities.m */,
 				FC55614D194A28D800717189 /* NSString+IntegralSizing.h */,
 				FC55614E194A28D800717189 /* NSString+IntegralSizing.m */,
 				FC55617A194A316A00717189 /* UIColor+RandomColor.h */,
@@ -507,8 +543,10 @@
 				FCB6C02419294A0D009330C7 /* BCRootViewController.m in Sources */,
 				4C1F696F195B117C00C31597 /* BCSermonNotesViewController.m in Sources */,
 				4C1F6974195B138100C31597 /* BCTableHeaderView.m in Sources */,
+				4CFB036F1A3F940B00B997AC /* NSDate+MobileAPI.m in Sources */,
 				FC55616C194A28D800717189 /* CLCommonToolkits.m in Sources */,
 				FC556174194A28D800717189 /* CLSlideOutNavViewController.m in Sources */,
+				4CFB03791A3F941E00B997AC /* CLEmptyStateScreen.m in Sources */,
 				FCCC29171925A6AD00FF7B3C /* NTCBC.xcdatamodeld in Sources */,
 				FC55616E194A28D800717189 /* CLFadeInNavViewController.m in Sources */,
 				FC556172194A28D800717189 /* CLPageIndicator.m in Sources */,
@@ -516,6 +554,8 @@
 				FCCC29101925A6AD00FF7B3C /* main.m in Sources */,
 				4C1F696B195B112600C31597 /* BCSSInfoViewController.m in Sources */,
 				4C1F6963195B0D5D00C31597 /* BCProfileViewController.m in Sources */,
+				4CFB03731A3F940B00B997AC /* NSManagedObjectContext+FetchedObjectFromURI.m in Sources */,
+				4CFB03751A3F940B00B997AC /* NSString+HTMLEntities.m in Sources */,
 				FC556170194A28D800717189 /* CLNetworkService.m in Sources */,
 				FC556178194A2CC400717189 /* BCBullitenTableViewCell.m in Sources */,
 				FC55616A194A28D800717189 /* CLBlockOperation.m in Sources */,
@@ -526,10 +566,12 @@
 				FC556160194A28D800717189 /* BCBuildFaithTableViewController.m in Sources */,
 				FC55615E194A28D800717189 /* BCAnnouncementsTableViewController.m in Sources */,
 				FC556180194A35E800717189 /* BCBulletinViewController.m in Sources */,
+				4CFB03711A3F940B00B997AC /* NSManagedObjectContext+ChildContext.m in Sources */,
 				FCCC29141925A6AD00FF7B3C /* BCAppDelegate.m in Sources */,
 				FC556164194A28D800717189 /* BCPrayerRequestsViewController.m in Sources */,
 				4CBD6E01195F21E300EF576C /* UIFont+NTCBC.m in Sources */,
 				FC55615C194A28D800717189 /* BCUserSettings.m in Sources */,
+				4CFB036D1A3F940B00B997AC /* NSAttributedString+IntegralSizing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +585,10 @@
 				FC556173194A28D800717189 /* CLPageIndicator.m in Sources */,
 				FC55615D194A28D800717189 /* BCUserSettings.m in Sources */,
 				FC55616B194A28D800717189 /* CLBlockOperation.m in Sources */,
+				4CFB03721A3F940B00B997AC /* NSManagedObjectContext+ChildContext.m in Sources */,
 				FC556175194A28D800717189 /* CLSlideOutNavViewController.m in Sources */,
+				4CFB037A1A3F941E00B997AC /* CLEmptyStateScreen.m in Sources */,
+				4CFB036E1A3F940B00B997AC /* NSAttributedString+IntegralSizing.m in Sources */,
 				FC55616D194A28D800717189 /* CLCommonToolkits.m in Sources */,
 				FC556181194A35E800717189 /* BCBulletinViewController.m in Sources */,
 				FC55616F194A28D800717189 /* CLFadeInNavViewController.m in Sources */,
@@ -555,13 +600,16 @@
 				4C1F6975195B138100C31597 /* BCTableHeaderView.m in Sources */,
 				FC55617D194A316A00717189 /* UIColor+RandomColor.m in Sources */,
 				4C1F6960195B0D1A00C31597 /* BCContactsViewController.m in Sources */,
+				4CFB03701A3F940B00B997AC /* NSDate+MobileAPI.m in Sources */,
 				FC556179194A2CC400717189 /* BCBullitenTableViewCell.m in Sources */,
 				FC556171194A28D800717189 /* CLNetworkService.m in Sources */,
 				FC556167194A28D800717189 /* BCWorshipScheduleTableViewController.m in Sources */,
 				FC556169194A28D800717189 /* NSString+IntegralSizing.m in Sources */,
+				4CFB03761A3F940B00B997AC /* NSString+HTMLEntities.m in Sources */,
 				FCB6C02519294A0D009330C7 /* BCRootViewController.m in Sources */,
 				4CBD6E02195F21E300EF576C /* UIFont+NTCBC.m in Sources */,
 				4C1F696C195B112600C31597 /* BCSSInfoViewController.m in Sources */,
+				4CFB03741A3F940B00B997AC /* NSManagedObjectContext+FetchedObjectFromURI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
