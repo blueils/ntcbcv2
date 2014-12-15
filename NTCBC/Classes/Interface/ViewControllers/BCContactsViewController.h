@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BCEmptyStateView.h"
 
-@interface BCContactsViewController : UIViewController
+@interface BCContactsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+    BCEmptyStateView *_emptyStateScreen;
+    
+    UITableView *_tableView;
+    NSArray *_savedContacts;
+}
 
 @end

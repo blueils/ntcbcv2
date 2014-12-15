@@ -9,7 +9,7 @@
 #import "CLEmptyStateScreen.h"
 #import "NSString+IntegralSizing.h"
 #import "CLCommon.h"
-#import "UIFont+Aldo.h"
+#import "UIFont+NTCBC.h"
 
 #define kTipInteriorGap 7.0
 #define kTipExteriorGap 30.0

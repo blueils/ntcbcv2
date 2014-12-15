@@ -11,6 +11,6 @@
 @interface NSString (HTMLEntities)
 
 - (NSString *)stringByRemovingHTMLtags;
-- (NSString *)stringByReplacingHTMLentities;
+//- (NSString *)stringByReplacingHTMLentities;
 
 @end

@@ -35,6 +35,16 @@
 		4CFB03761A3F940B00B997AC /* NSString+HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB036C1A3F940B00B997AC /* NSString+HTMLEntities.m */; };
 		4CFB03791A3F941E00B997AC /* CLEmptyStateScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB03781A3F941E00B997AC /* CLEmptyStateScreen.m */; };
 		4CFB037A1A3F941E00B997AC /* CLEmptyStateScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB03781A3F941E00B997AC /* CLEmptyStateScreen.m */; };
+		4CFB037D1A3F97F700B997AC /* CLLightHighlightButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB037C1A3F97F700B997AC /* CLLightHighlightButton.m */; };
+		4CFB037E1A3F97F700B997AC /* CLLightHighlightButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB037C1A3F97F700B997AC /* CLLightHighlightButton.m */; };
+		4CFB03801A3F989900B997AC /* add_contact_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB037F1A3F989900B997AC /* add_contact_icon@2x.png */; };
+		4CFB03811A3F989900B997AC /* add_contact_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB037F1A3F989900B997AC /* add_contact_icon@2x.png */; };
+		4CFB03871A3F9A1700B997AC /* AQTrie.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB03841A3F9A1700B997AC /* AQTrie.m */; };
+		4CFB03881A3F9A1700B997AC /* AQTrie.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB03841A3F9A1700B997AC /* AQTrie.m */; };
+		4CFB03891A3F9A1700B997AC /* HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB03861A3F9A1700B997AC /* HTMLEntities.m */; };
+		4CFB038A1A3F9A1700B997AC /* HTMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB03861A3F9A1700B997AC /* HTMLEntities.m */; };
+		4CFB038D1A3F9BE200B997AC /* BCEmptyStateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB038C1A3F9BE200B997AC /* BCEmptyStateView.m */; };
+		4CFB038E1A3F9BE200B997AC /* BCEmptyStateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB038C1A3F9BE200B997AC /* BCEmptyStateView.m */; };
 		FC55615C194A28D800717189 /* BCUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55613F194A28D800717189 /* BCUserSettings.m */; };
 		FC55615D194A28D800717189 /* BCUserSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = FC55613F194A28D800717189 /* BCUserSettings.m */; };
 		FC55615E194A28D800717189 /* BCAnnouncementsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC556142194A28D800717189 /* BCAnnouncementsTableViewController.m */; };
@@ -126,6 +136,15 @@
 		4CFB036C1A3F940B00B997AC /* NSString+HTMLEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTMLEntities.m"; sourceTree = "<group>"; };
 		4CFB03771A3F941E00B997AC /* CLEmptyStateScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLEmptyStateScreen.h; sourceTree = "<group>"; };
 		4CFB03781A3F941E00B997AC /* CLEmptyStateScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLEmptyStateScreen.m; sourceTree = "<group>"; };
+		4CFB037B1A3F97F700B997AC /* CLLightHighlightButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLLightHighlightButton.h; sourceTree = "<group>"; };
+		4CFB037C1A3F97F700B997AC /* CLLightHighlightButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLLightHighlightButton.m; sourceTree = "<group>"; };
+		4CFB037F1A3F989900B997AC /* add_contact_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_contact_icon@2x.png"; sourceTree = "<group>"; };
+		4CFB03831A3F9A1700B997AC /* AQTrie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQTrie.h; sourceTree = "<group>"; };
+		4CFB03841A3F9A1700B997AC /* AQTrie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQTrie.m; sourceTree = "<group>"; };
+		4CFB03851A3F9A1700B997AC /* HTMLEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLEntities.h; sourceTree = "<group>"; };
+		4CFB03861A3F9A1700B997AC /* HTMLEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLEntities.m; sourceTree = "<group>"; };
+		4CFB038B1A3F9BE200B997AC /* BCEmptyStateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCEmptyStateView.h; sourceTree = "<group>"; };
+		4CFB038C1A3F9BE200B997AC /* BCEmptyStateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCEmptyStateView.m; sourceTree = "<group>"; };
 		FC55613E194A28D800717189 /* BCUserSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCUserSettings.h; sourceTree = "<group>"; };
 		FC55613F194A28D800717189 /* BCUserSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCUserSettings.m; sourceTree = "<group>"; };
 		FC556141194A28D800717189 /* BCAnnouncementsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCAnnouncementsTableViewController.h; sourceTree = "<group>"; };
@@ -213,8 +232,21 @@
 			children = (
 				4C1F6972195B138100C31597 /* BCTableHeaderView.h */,
 				4C1F6973195B138100C31597 /* BCTableHeaderView.m */,
+				4CFB038B1A3F9BE200B997AC /* BCEmptyStateView.h */,
+				4CFB038C1A3F9BE200B997AC /* BCEmptyStateView.m */,
 			);
 			path = Widgets;
+			sourceTree = "<group>";
+		};
+		4CFB03821A3F9A1700B997AC /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				4CFB03831A3F9A1700B997AC /* AQTrie.h */,
+				4CFB03841A3F9A1700B997AC /* AQTrie.m */,
+				4CFB03851A3F9A1700B997AC /* HTMLEntities.h */,
+				4CFB03861A3F9A1700B997AC /* HTMLEntities.m */,
+			);
+			path = HTML;
 			sourceTree = "<group>";
 		};
 		FC55613A194A28D800717189 /* Classes */ = {
@@ -289,6 +321,7 @@
 		FC55614B194A28D800717189 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				4CFB03821A3F9A1700B997AC /* HTML */,
 				FC55614C194A28D800717189 /* Categories */,
 				FC55614F194A28D800717189 /* CLBlockOperation.h */,
 				FC556150194A28D800717189 /* CLBlockOperation.m */,
@@ -305,6 +338,8 @@
 				FC55615B194A28D800717189 /* CLSlideOutNavViewController.m */,
 				4CFB03771A3F941E00B997AC /* CLEmptyStateScreen.h */,
 				4CFB03781A3F941E00B997AC /* CLEmptyStateScreen.m */,
+				4CFB037B1A3F97F700B997AC /* CLLightHighlightButton.h */,
+				4CFB037C1A3F97F700B997AC /* CLLightHighlightButton.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -357,6 +392,7 @@
 		FC556185194BD5D300717189 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4CFB037F1A3F989900B997AC /* add_contact_icon@2x.png */,
 				4CBD6E03195F279000EF576C /* welcome_banner@2x.jpg */,
 				FC556186194BD5D300717189 /* main_nav_button@2x.png */,
 			);
@@ -516,6 +552,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCCC290E1925A6AD00FF7B3C /* InfoPlist.strings in Resources */,
+				4CFB03801A3F989900B997AC /* add_contact_icon@2x.png in Resources */,
 				FCCC29191925A6AD00FF7B3C /* Images.xcassets in Resources */,
 				FC556187194BD5D300717189 /* main_nav_button@2x.png in Resources */,
 				4CBD6E04195F279000EF576C /* welcome_banner@2x.jpg in Resources */,
@@ -526,6 +563,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CFB03811A3F989900B997AC /* add_contact_icon@2x.png in Resources */,
 				FCCC292B1925A6AD00FF7B3C /* InfoPlist.strings in Resources */,
 				4CBD6E05195F279000EF576C /* welcome_banner@2x.jpg in Resources */,
 				FC556188194BD5D300717189 /* main_nav_button@2x.png in Resources */,
@@ -541,6 +579,7 @@
 			files = (
 				FC556162194A28D800717189 /* BCChurchBasicInfoTableViewController.m in Sources */,
 				FCB6C02419294A0D009330C7 /* BCRootViewController.m in Sources */,
+				4CFB037D1A3F97F700B997AC /* CLLightHighlightButton.m in Sources */,
 				4C1F696F195B117C00C31597 /* BCSermonNotesViewController.m in Sources */,
 				4C1F6974195B138100C31597 /* BCTableHeaderView.m in Sources */,
 				4CFB036F1A3F940B00B997AC /* NSDate+MobileAPI.m in Sources */,
@@ -549,12 +588,14 @@
 				4CFB03791A3F941E00B997AC /* CLEmptyStateScreen.m in Sources */,
 				FCCC29171925A6AD00FF7B3C /* NTCBC.xcdatamodeld in Sources */,
 				FC55616E194A28D800717189 /* CLFadeInNavViewController.m in Sources */,
+				4CFB03891A3F9A1700B997AC /* HTMLEntities.m in Sources */,
 				FC556172194A28D800717189 /* CLPageIndicator.m in Sources */,
 				4C1F695F195B0D1A00C31597 /* BCContactsViewController.m in Sources */,
 				FCCC29101925A6AD00FF7B3C /* main.m in Sources */,
 				4C1F696B195B112600C31597 /* BCSSInfoViewController.m in Sources */,
 				4C1F6963195B0D5D00C31597 /* BCProfileViewController.m in Sources */,
 				4CFB03731A3F940B00B997AC /* NSManagedObjectContext+FetchedObjectFromURI.m in Sources */,
+				4CFB038D1A3F9BE200B997AC /* BCEmptyStateView.m in Sources */,
 				4CFB03751A3F940B00B997AC /* NSString+HTMLEntities.m in Sources */,
 				FC556170194A28D800717189 /* CLNetworkService.m in Sources */,
 				FC556178194A2CC400717189 /* BCBullitenTableViewCell.m in Sources */,
@@ -562,6 +603,7 @@
 				4C1F6967195B0D8C00C31597 /* BCGeneralAboutViewController.m in Sources */,
 				FC556166194A28D800717189 /* BCWorshipScheduleTableViewController.m in Sources */,
 				FC556168194A28D800717189 /* NSString+IntegralSizing.m in Sources */,
+				4CFB03871A3F9A1700B997AC /* AQTrie.m in Sources */,
 				FC55617C194A316A00717189 /* UIColor+RandomColor.m in Sources */,
 				FC556160194A28D800717189 /* BCBuildFaithTableViewController.m in Sources */,
 				FC55615E194A28D800717189 /* BCAnnouncementsTableViewController.m in Sources */,
@@ -593,17 +635,21 @@
 				FC556181194A35E800717189 /* BCBulletinViewController.m in Sources */,
 				FC55616F194A28D800717189 /* CLFadeInNavViewController.m in Sources */,
 				FC556165194A28D800717189 /* BCPrayerRequestsViewController.m in Sources */,
+				4CFB037E1A3F97F700B997AC /* CLLightHighlightButton.m in Sources */,
 				4C1F6964195B0D5D00C31597 /* BCProfileViewController.m in Sources */,
 				FC55615F194A28D800717189 /* BCAnnouncementsTableViewController.m in Sources */,
 				FC556161194A28D800717189 /* BCBuildFaithTableViewController.m in Sources */,
+				4CFB03881A3F9A1700B997AC /* AQTrie.m in Sources */,
 				FCCC292D1925A6AD00FF7B3C /* NTCBCTests.m in Sources */,
 				4C1F6975195B138100C31597 /* BCTableHeaderView.m in Sources */,
 				FC55617D194A316A00717189 /* UIColor+RandomColor.m in Sources */,
+				4CFB038E1A3F9BE200B997AC /* BCEmptyStateView.m in Sources */,
 				4C1F6960195B0D1A00C31597 /* BCContactsViewController.m in Sources */,
 				4CFB03701A3F940B00B997AC /* NSDate+MobileAPI.m in Sources */,
 				FC556179194A2CC400717189 /* BCBullitenTableViewCell.m in Sources */,
 				FC556171194A28D800717189 /* CLNetworkService.m in Sources */,
 				FC556167194A28D800717189 /* BCWorshipScheduleTableViewController.m in Sources */,
+				4CFB038A1A3F9A1700B997AC /* HTMLEntities.m in Sources */,
 				FC556169194A28D800717189 /* NSString+IntegralSizing.m in Sources */,
 				4CFB03761A3F940B00B997AC /* NSString+HTMLEntities.m in Sources */,
 				FCB6C02519294A0D009330C7 /* BCRootViewController.m in Sources */,

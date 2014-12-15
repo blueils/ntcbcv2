@@ -53,4 +53,17 @@
     return [UIFont fontWithName:@"Avenir-Light" size:fontSize];
 }
 
+- (CGFloat)heightForNumberOfLines:(NSUInteger)numberOfLines {
+    CGFloat lineHeight;
+    if ([self respondsToSelector:@selector(lineHeight)]) {
+        lineHeight = [self lineHeight];
+    } else {
+        CGSize lineSize = [@"A" sizeWithAttributes:@{NSFontAttributeName:self}];
+        lineHeight = lineSize.height;
+    }
+    
+    return ceilf(lineHeight) * numberOfLines;
+    
+}
+
 @end

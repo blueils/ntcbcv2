@@ -7,8 +7,6 @@
 //
 
 #import "NSAttributedString+IntegralSizing.h"
-#import "UIColor+Aldo.h"
-#import "UIFont+Aldo.h"
 
 @implementation NSAttributedString (IntegralSizing)
 

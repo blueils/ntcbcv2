@@ -25,4 +25,6 @@
 + (UIFont *) bcSansSerifHeaderFontOfSize: (CGFloat)fontSize;
 + (UIFont *) bcSansSerifLightFontOfSize: (CGFloat)fontSize;
 
+- (CGFloat)heightForNumberOfLines:(NSUInteger)numberOfLines;
+
 @end
