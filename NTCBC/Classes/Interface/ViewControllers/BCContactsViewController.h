@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "BCEmptyStateView.h"
+#import <AddressBook/AddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
 
-@interface BCContactsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+@interface BCContactsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, ABNewPersonViewControllerDelegate> {
     BCEmptyStateView *_emptyStateScreen;
     
     UITableView *_tableView;

@@ -9,6 +9,7 @@
 #import "BCContactsViewController.h"
 #import "CLLightHighlightButton.h"
 
+
 @implementation BCContactsViewController
 
 - (id)init
@@ -54,6 +55,12 @@
 #pragma mark - 
 - (void) addContactTapped: (id)sender {
     //TO DO: Add new contact
+    ABNewPersonViewController *viewController = [[ABNewPersonViewController alloc] init];
+    viewController.newPersonViewDelegate = self;
+    
+    UINavigationController *navController = [[UINavigationController alloc]
+                                                       initWithRootViewController:viewController];
+    [self presentViewController:navController animated:YES completion:nil];
 }
 
 - (void)loadSavedContacts {
@@ -70,6 +77,13 @@
         _emptyStateScreen.hidden = NO;
         _tableView.hidden = YES;
     }
+}
+
+#pragma mark - ABNewPersonViewCopntrollerDelegate
+
+- (void)newPersonViewController:(ABNewPersonViewController *)newPersonView didCompleteWithNewPerson:(ABRecordRef)person {
+    //TO DO: display the person in the list
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - UITableViewDataSource
